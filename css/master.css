@@ -7,10 +7,7 @@
 	box-sizing: border-box;
 }
 :root {
-	--saltpan		: #edf4ec;
-	--river_bed		: #4d5a65;
-	--outer_space	: #252c2f;
-	--dark_blue		: #21333e;
+	--saltpan		: #eef4ed;
     --green1		: #00a6a6;
     --green2		: #058283;
     --green1_15		: #00a6a626;
@@ -18,12 +15,17 @@
 	--grey1			: #c0c3d0;
 	--white			: #f9f9f9;
 	--realwhite		: #ffffff;
-	
-	--jumbo: url(../img/jumbo.jpg);
-
-
+	--dark_blue1	: #111117;
+	--dark_petrol	: #21333e;
     --black			: #000000;
 	--black_50		: #00000080;
+	--almost_black	: #0F0F13;
+		
+	--jumbo: url(../img/jumbo.jpg);
+	
+	
+	--river_bed		: #4d5a65;
+	--outer_space	: #252c2f;
     --section-1-bg-color: #eef4ed;
     --section-2-bg-color: #111117;
     --section-3-bg-color: #eef4ed;
@@ -57,7 +59,7 @@ ul {
 header .pre_header {
 	height: 50px;
 	line-height: 50px;
-	background-color: var(--dark_blue);
+	background-color: var(--dark_petrol);
 }
 header .pre_header a {
 	color: var(--grey1);
@@ -81,8 +83,9 @@ header .pre_header .pre_header_right li:not(:last-child) {
 header .jumbo_header {
 	position: relative;
 	height: calc(100vh - 50px);
-	padding-top: 20px;
+	padding-top: 10px;
 	background: url(../img/jumbo.jpg);
+	background-size: cover;
 }
 header .jumbo_header .jumbo_shadow {
 	position: absolute;
@@ -95,12 +98,20 @@ header .jumbo_header .jumbo_shadow {
 }
 header .jumbo_header .header_nav {
 	position: relative;
-	z-index: 1;
+	z-index: 999;
+	padding: 10px 0;
+}
+header .jumbo_header .header_nav.fixed {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: var(--dark_petrol);
+}
+header .jumbo_header .header_nav_content {
 	height: 46px;
 	line-height: 46px;
 	padding-left: 5px;
 }
-
 /** LOGO **/
 header .jumbo_header .header_nav a .logo_left {
 	padding-left: 30px; 
@@ -176,30 +187,88 @@ header .jumbo_header .jumbo_payoff .btn_bar li + li {
 /****************************************************************
 **  SERVICES
 */
+.services {
+	height: 727px;
+	/* border: 1px dashed red; */
+}
 
 /****************************************************************
 **  COMPANY
 */
+.company {
+	width: 100%;
+	height: 1029px;
+}
+.company .comapny_left {
+	height: 100%;
+	width: 50%;
+	background-color: var(--dark_blue1);
+	/* border: 1px dashed red; */
+}
+.company .comapny_right {
+	height: 100%;
+	width: 50%;
+	background-image: url(../img/about-5.jpg);
+	background-position: center 0;
+	background-size: cover;
+	/* border: 1px dashed red; */
+}
 
 /****************************************************************
 **  SPONSORS
 */
+.sponsors {
+	height: 285px;
+	/* border: 1px dashed red; */
+}
 
 /****************************************************************
 **  NEWS
 */
+.news {
+	height: 830px;
+	background-color: var(--realwhite);
+	/* border: 1px dashed red; */
+}
 
 /****************************************************************
 **  NEWSLETTER
 */
+.newsletter {
+	height: 456px;
+	background-image: url(../img/bg-1.jpg);
+	background-position: center 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/* border: 1px dashed red; */
+}
 
 /****************************************************************
 **  CONTACT
 */
+.contact {
+	height: 848px;
+	/* border: 1px dashed red; */
+}
 
 /****************************************************************
 **  FOOTER
 */
+footer .main_footer {
+	height: 621px;
+	background-image: url(../img/bg-10.jpg);
+	background-position: center 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/* border: 1px dashed red; */
+}
+footer .post_footer {
+	height: 89px;
+	/* border: 1px dashed red; */
+	background-color: var(--almost_black);
+}
 
 /****************************************************************
 **  BUTTONS
