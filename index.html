@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- *** [ FONTS ] *** -->
+		<!-- *** [ FONTS - montserrat, poppins ] *** -->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<!-- *** [ FONT AWESOME ] *** -->
-		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" /> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 		<!-- *** [ BOOTSTRAP ] *** -->
 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 		<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
@@ -109,32 +109,78 @@
 
 		------------------------------------------>
 
-		<div id="app" class="flex-row-co">
+		<div id="app">
 
-			<!-- ** HEADER ** -->
 			<header>
-				<section class="pre_header"></section>
-				<section class="main_header"></section>
+
+				<!-- ** ** PRE HEADER ** ** -->
+				<section class="pre_header txt_1">
+					<div class="wrapper1100 flex-row fx-row-between">
+						<ul class="pre_header_left">
+							<li><a href="#"><i class="fas fa-clock"></i><span>Open Hours: Mon - Sat - 9:00 - 18:00</span></li></a>
+						</ul>
+						<ul class="pre_header_right flex-row-cv">
+							<li><a href="#"><i class="fas fa-phone-alt"></i><span>+1 (305) 1234-5678</span></a></li>
+							<li><a href="#"><i class="fas fa-envelope"></i><span>hello@example.com</span></a></li>
+							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- ** ** JUMBO HEADER ** ** -->
+				<section class="jumbo_header">
+					<div class="jumbo_shadow"></div>
+					<div class="header_nav wrapper1100 flex-row fx-row-between">
+						<!-- ** LOGO ** -->
+						<ul class="logo txt_logo">
+							<li>
+								<a href="" class="flex-row">
+									<div class="logo_left">NEX</div>
+									<div class="logo_right">GEN</div>	
+								</a>
+							</li>							
+						</ul>						
+						<!-- ** NAV ** -->
+						<ul class="nav flex-row-cv txt_2">
+							<li><a href="#">home</a></li>
+							<li><a href="#">services</a></li>
+							<li><a href="#">skills</a></li>
+							<li><a href="#">partners</a></li>
+							<li><a href="#">blog</a></li>
+							<li><button class="btn_full txt_btn">get in touch</button></li>
+						</ul>
+					</div> <!-- header_nav -->
+					<!-- ** JUMBO PAYOFF ** -->
+					<div class="jumbo_payoff">
+						<div class="payoff txt_payoff txt_poppins"><span class="decor"><span>Logistics</span></span> that goes further.</div>
+						<div class="sub_payoff txt_3">For 20 years working with the most innovative in the field of transport.</div>
+						<ul class="btn_bar flex-row-cv txt_btn">
+							<li><button class="btn_full">get in touch</button></li>
+							<li><button class="btn_empty">read more</button></li>
+						</ul>
+					</div>
+				</section>
+
 			</header>
 
 			<main>
-				<!-- ** JUMBOTRON ** -->
-				<section class="jumbotron"></section>
-				<!-- ** SERVICES ** -->
+				<!-- ** ** SERVICES ** ** -->
 				<section class="services"></section>
-				<!-- ** COMPANY ** -->
+				<!-- ** ** COMPANY ** ** -->
 				<section class="company"></section>
-				<!-- ** SPONSORS ** -->
+				<!-- ** ** SPONSORS ** ** -->
 				<section class="sponsors"></section>
-				<!-- ** NEWS ** -->
+				<!-- ** ** NEWS ** ** -->
 				<section class="news"></section>
-				<!-- ** NEWSLETTER ** -->
+				<!-- ** ** NEWSLETTER ** ** -->
 				<section class="newsletter"></section>
-				<!-- ** CONTACT ** -->
+				<!-- ** ** CONTACT ** ** -->
 				<section class="contact"></section>
 			</main>
 
-			<!-- ** FOOTER ** -->
+			<!-- ** ** FOOTER ** ** -->
 			<footer>
 				<section class="main_footer"></section>
 				<section class="post_footer"></section>
