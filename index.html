@@ -35,6 +35,15 @@
 
 		<!-----------------------------------------
 			
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+							  giorno 1	  giorno 2	  giorno 3*
+		1. html/css struttura	[X]
+		2. html/css sezioni		[X]			[ ]
+		3. vue.js header								[ ]
+		4. vue.js footer								[ ]
+													*no mattina
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 		Progetto HTML/VueJS
 		Repo: proj-html-vuejs
 
@@ -172,8 +181,8 @@
 					<div class="wrapper1100 flex-row fx-row-between">
 						<div class="services_left">
 							<div class="txt_super_title">our business areas</div>
-							<div class="txt_title">Logistics Services</div>
-							<div class="txt_sub_title">We are leaders in providing logistics services with a set of cutting edge technologies and a team of experienced and renowned professionals.</div>
+							<div class="title txt_title">Logistics Services</div>
+							<div class="sub_title txt_sub_title">We are leaders in providing logistics services with a set of cutting edge technologies and a team of experienced and renowned professionals.</div>
 							<div class="btn_row flex-row">
 								<button class="btn_small">tradition</button>
 								<button class="btn_small">quality</button>
@@ -184,21 +193,33 @@
 						<div class="services_right flex-row-co">
 							<div class="card">
 								<img src="img/gallery-3.jpg" alt="">
-								<div class="title txt_small_title">Technology</div>
+								<div class="small_title txt_small_title">Technology</div>
 								<div class="sub_title txt_sub_title">Focused on developing technology solutions adapted to our client's needs.</div>
 							</div>
 							<div class="card">
 								<img src="img/gallery-5.jpg" alt="">
-								<div class="title txt_small_title">Transport</div>
+								<div class="small_title txt_small_title">Transport</div>
 								<div class="sub_title txt_sub_title">We develop operational strategies to improve logistical efficiency.</div>								
 							</div>
 						</div>
 					</div>
 				</section>
 				<!-- ** ** COMPANY ** ** -->
-				<section class="company flex-row">
-					<div class="comapny_left"></div>
-					<div class="comapny_right"></div>
+				<section class="company">
+					<div class="company_bg flex-row">
+						<div class="company_bg_left"></div>
+						<div class="company_bg_right"></div>
+					</div>
+					<div class="company_box">
+						<div class="company_content wrapper1100 flex-row-cv">
+							<div class="comapny_block">
+								<div class="txt_super_title">about the network</div>
+								<div class="title txt_title">The company</div>
+								<div class="sub_title txt_sub_title">With all of this expertise and capability comes an unrivalled commitment to customer service.</div>
+	
+							</div>
+						</div>
+					</div>
 				</section>
 				<!-- ** ** SPONSORS ** ** -->
 				<section class="sponsors flex-row-cc">
@@ -217,8 +238,8 @@
 				<section class="newsletter flex-row-cc">
 					<div class="nexsletter_left">
 						<div class="txt_super_title">newsletter</div>
-						<div class="txt_title"><span class="txt_bg_highlight_1">Know</span> First</div>
-						<div class="txt_sub_title">Follow closely and receive content about our company and the news of the current market.</div>
+						<div class="title txt_title"><span class="txt_bg_highlight_1">Know</span> First</div>
+						<div class="sub_title txt_sub_title">Follow closely and receive content about our company and the news of the current market.</div>
 					</div>
 					<div class="nexsletter_right">
 						<input type="text" placeholder="Name" class="txt_input">
@@ -231,8 +252,8 @@
 					<div class="wrapper1100 flex-row">
 						<div class="contact_left">
 							<div class="txt_super_title">send a message</div>
-							<div class="txt_title">Get in <span class="txt_bg_highlight_1">Touch</span></div>
-							<div class="txt_sub_title">We will respond to your message as soon as possible.</div>
+							<div class="title txt_title">Get in <span class="txt_bg_highlight_1">Touch</span></div>
+							<div class="sub_title txt_sub_title">We will respond to your message as soon as possible.</div>
 							<form class="flex-col-cv" action="">
 								<div class="form_row flex-row">
 									<input type="text" placeholder="Name" class="txt_input">
@@ -250,7 +271,7 @@
 							</form>
 							<button class="btn_full">send</button>
 						</div>
-						<div class="contact_right ">
+						<div class="contact_right">
 							<div class="small_title txt_small_title">Example Inc.</div>
 							<div class="sub_title txt_sub_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 							<div class="sub_title txt_sub_title">Praesent diam lacus, dapibus sed imperdiet consectetur.</div>

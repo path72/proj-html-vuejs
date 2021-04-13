@@ -198,20 +198,6 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	padding: 120px 0;
 	/* border: 1px dashed red; */
 }
-.services::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translate(-47%,50%);
-	z-index: 1;
-	width: 150px;
-	height: 60px;
-	opacity: 0.30;
-	background-image: url(../img/bullets.png);
-	background-size: cover;
-	/* border: 1px dashed red; */
-}
 .services .services_left {
 	width: 30%;
 	margin-right: 40px;
@@ -247,12 +233,26 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	width: 100%;
 	margin-bottom: 10px;
 }
-.services .services_right .card .title {
+.services .services_right .card .small_title {
 	color: var(--dark_petrol);
 	margin-bottom: 20px;
 }
 .services .services_right .card .sub_title {
 	color: var(--grey2);
+}
+.services::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-47%,50%);
+	z-index: 1;
+	width: 150px;
+	height: 60px;
+	opacity: 0.30;
+	background-image: url(../img/bullets.png);
+	background-size: cover;
+	/* border: 1px dashed red; */
 }
 
 /****************************************************************
@@ -263,6 +263,47 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	width: 100%;
 	height: 1029px;
 }
+.company .company_bg {
+	width: 100%;
+	height: 100%;
+}
+.company .company_bg_left {
+	width: 50%;
+	background-color: var(--dark_blue1);
+}
+.company .company_bg_right {
+	width: 50%;
+	background-image: url(../img/about-5.jpg);
+	background-position: center 0;
+	background-size: cover;
+}
+.company .company_box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/* border: 1px dashed green; */
+}
+.company .company_box .company_content {
+	height: 100%;
+	/* border: 1px dashed red; */
+}
+.company .company_box .company_content .comapny_block {
+	width: 50%;
+	border: 1px dashed red;
+}
+.company .company_box .company_content .company .comapny_block .title {
+	color: var(--realwhite);
+}
+.company .company_box .company_content .company .comapny_block .sub_title {
+	color: var(--grey1);
+}
+
+
+
+
+
 .company::after {
 	content: '';
 	position: absolute;
@@ -277,20 +318,11 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	background-size: cover;
 	/* border: 1px dashed red; */
 }
-.company .comapny_left {
-	height: 100%;
-	width: 50%;
-	background-color: var(--dark_blue1);
-	/* border: 1px dashed red; */
-}
-.company .comapny_right {
-	height: 100%;
-	width: 50%;
-	background-image: url(../img/about-5.jpg);
-	background-position: center 0;
-	background-size: cover;
-	/* border: 1px dashed red; */
-}
+
+
+
+
+
 
 /****************************************************************
 **  SPONSORS
@@ -332,10 +364,10 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	margin: 0 25px;
 	/* border: 1px dashed red; */
 }
-.newsletter .nexsletter_left .txt_title {
+.newsletter .nexsletter_left .title {
 	color: var(--white);
 }
-.newsletter .nexsletter_left .txt_sub_title {
+.newsletter .nexsletter_left .sub_title {
 	color: var(--grey1);
 }
 .newsletter .nexsletter_right {
@@ -363,13 +395,13 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	margin-right: 40px;
 	/* border: 1px dashed red; */
 }
-.contact .contact_left .txt_title {
+.contact .contact_left .title {
 	color: var(--dark_petrol);
 }
-.contact .contact_left .txt_title span {
+.contact .contact_left .title span {
 	color: var(--green2);
 }
-.contact .contact_left .txt_sub_title {
+.contact .contact_left .sub_title {
 	color: var(--grey2);
 }
 .contact .contact_left form {
@@ -525,18 +557,12 @@ textarea:focus {
 	font-size: 1em;
 	font-weight: 500;
 }
-
 .txt_5 {
+	/* contact ul */
 	font-size: 1.19em;
 	font-weight: 400;
 }
-.txt_input {
-	/* input fields */
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1em;
-	font-weight: 400;
-	line-height: 1.1875em; /* 19px */
-}
+
 
 /** stsandard text blocks **/
 .txt_logo {
@@ -564,6 +590,7 @@ textarea:focus {
 }
 .txt_title {
 	display: block;
+	text-transform: capitalize;
 	font-family: 'Poppins', sans-serif;
 	font-size: 3em;
 	font-weight: 700;
@@ -587,6 +614,14 @@ textarea:focus {
 	border-radius: 4px;
 	background-color: var(--green1_15);
 }
+.txt_input {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.19em; /* 19px */
+}
+
+
 
 /****************************************************************
 **  CARD
