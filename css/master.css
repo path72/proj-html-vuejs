@@ -44,7 +44,6 @@ ul {
 /****************************************************************
 ** LOGO
 */
-/** LOGO **/
 a .logo_left {
 	padding-left: 30px; 
 	border-top-left-radius: 100px; 
@@ -78,7 +77,7 @@ header .pre_header span {
 	padding: 0 3px;
 }
 header .pre_header .pre_header_right li:not(:last-child) {
-	padding-right: 26px;
+	padding-right: 27px;
 }
 
 /****************************************************************
@@ -91,14 +90,15 @@ header .jumbo_header {
 	background: url(../img/jumbo.jpg);
 	background-size: cover;
 }
-header .jumbo_header .jumbo_shadow {
+header .jumbo_header::after {
+	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 0;
 	width: 100%;
 	height: 100%;
-	background-color: var(--black_50); 
+	background-color: var(--black_50);
 }
 header .jumbo_header .header_nav {
 	position: relative;

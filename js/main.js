@@ -36,4 +36,5 @@ var app = new Vue(
 // # FUNCTIONS                                          # 
 // ###################################################### 
 
-
+// on scroll 
+// class: header_nav gets class:fixed
