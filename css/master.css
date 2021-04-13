@@ -18,8 +18,9 @@
 	--realwhite		: #ffffff;
 	--realwhite_50	: #ffffff80;
 	--realwhite_04	: #ffffff0a;
-	--dark_blue1	: #111117;
-	--dark_petrol	: #21333e;
+	--night			: #111117;
+	--lighter_night	: #23242A;
+	--petrol		: #21333e;
     --black			: #000000;
 	--black_50		: #00000080;
 	--black_075		: #00000013;
@@ -62,7 +63,7 @@ a .logo_right {
 header .pre_header {
 	height: 50px;
 	line-height: 50px;
-	background-color: var(--dark_petrol);
+	background-color: var(--petrol);
 }
 header .pre_header a {
 	color: var(--grey1);
@@ -109,7 +110,7 @@ header .jumbo_header .header_nav.fixed {
 	position: fixed;
 	width: 100%;
 	top: 0;
-	background-color: var(--dark_petrol);
+	background-color: var(--petrol);
 }
 header .jumbo_header .header_nav_content {
 	height: 46px;
@@ -194,7 +195,7 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	/* border: 1px dashed red; */
 }
 .services .services_left .txt_title {
-	color: var(--dark_petrol);
+	color: var(--petrol);
 }
 .services .services_left .txt_sub_title {
 	color: var(--grey2);
@@ -226,12 +227,14 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	margin-bottom: 10px;
 }
 .services .services_right .card .small_title {
-	color: var(--dark_petrol);
+	color: var(--petrol);
 	margin-bottom: 20px;
 }
 .services .services_right .card .sub_title {
 	color: var(--grey2);
 }
+
+/** DOTS 1 **/
 .services::after {
 	content: '';
 	position: absolute;
@@ -244,7 +247,6 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	opacity: 0.30;
 	background-image: url(../img/bullets.png);
 	background-size: cover;
-	/* border: 1px dashed red; */
 }
 
 /****************************************************************
@@ -261,7 +263,7 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 }
 .company .company_bg_left {
 	width: 50%;
-	background-color: var(--dark_blue1);
+	background-color: var(--night);
 }
 .company .company_bg_right {
 	width: 50%;
@@ -291,7 +293,7 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 }
 .company .company_box .company_content .company_block .small_title {
 	color: var(--white);
-	margin-bottom: 15px;
+	margin-bottom: 17px;
 }
 .company .company_box .company_content .company_block .sub_title {
 	color: var(--grey1);
@@ -302,20 +304,23 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 .company .company_box .company_content .company_block ul li .info {
 	margin-left: 35px;
 }
-.company .company_box .company_content .company_block .percentage {
-	position: relative;
-	z-index: 0;
-	width: 110px;
-	height: 110px;
+
+/** PIE CHART LIST **/
+.company .company_box .company_content .company_block .pie_chart span {
 	color: var(--grey1);
-	border-radius: 50%;
-	background-color: var(--green1);
-}
-.company .company_box .company_content .company_block .percentage span {
 	position: relative;
 	z-index: 2;
 }
-.company .company_box .company_content .company_block .percentage:after {
+.company .company_box .company_content .company_block .pie_chart {
+	position: relative;
+	width: 110px; 
+	height: 110px;
+	border-radius: 50%;
+	overflow: hidden;
+	background: var(--green1); 
+	background-image: linear-gradient(to bottom, transparent 50%, var(--lighter_night) 0); 
+}
+.company .company_box .company_content .company_block .pie_chart:after {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -325,8 +330,30 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	width: 80%;
 	height: 80%;
 	border-radius: 50%;
-	background-color: var(--dark_blue1);
+	background-color: var(--night);
 }
+.company .company_box .company_content .company_block .pie_chart::before { 
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background-color: inherit; 
+	transform-origin: 50% 0;
+}
+.company .company_box .company_content .company_block .pie_chart.value1::before { 
+	transform: rotate(-.08turn);
+}
+.company .company_box .company_content .company_block .pie_chart.value2::before { 
+	transform: rotate(-.00turn);
+}
+.company .company_box .company_content .company_block .pie_chart.value3::before { 
+	transform: rotate(-.15turn);
+}
+
+/** DOTS 2 **/
 .company::after {
 	content: '';
 	position: absolute;
@@ -369,7 +396,7 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	/* border: 1px dashed red; */
 }
 .news .news_top .news_top_left .title { 
-	color: var(--dark_petrol);
+	color: var(--petrol);
 }
 .news .news_top .news_top_left .title span { 
 	color: var(--green2);
@@ -462,7 +489,7 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	/* border: 1px dashed red; */
 }
 .contact .contact_left .title {
-	color: var(--dark_petrol);
+	color: var(--petrol);
 }
 .contact .contact_left .title span {
 	color: var(--green2);
@@ -492,7 +519,7 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	/* border: 1px dashed red; */
 }
 .contact .contact_right .small_title {
-	color: var(--dark_petrol);
+	color: var(--petrol);
 	margin-bottom: 20px;
 }
 .contact .contact_right .sub_title {
@@ -657,7 +684,7 @@ button.btn_small:hover {
 */
 input, select, textarea {
 	padding: 15px;
-	color: var(--dark_petrol);
+	color: var(--petrol);
 	border-radius: 5px;
 	border: none;
 	outline: none;
