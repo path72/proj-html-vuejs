@@ -289,21 +289,52 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	height: 100%;
 	/* border: 1px dashed red; */
 }
-.company .company_box .company_content .comapny_block {
+.company .company_box .company_content .company_block {
 	width: 50%;
-	border: 1px dashed red;
+	padding-right: 50px;
+	/* border: 1px dashed red; */
 }
-.company .company_box .company_content .company .comapny_block .title {
+.company .company_box .company_content .company_block .title {
 	color: var(--realwhite);
 }
-.company .company_box .company_content .company .comapny_block .sub_title {
+.company .company_box .company_content .company_block .small_title {
+	color: var(--white);
+	margin-bottom: 15px;
+}
+.company .company_box .company_content .company_block .sub_title {
 	color: var(--grey1);
 }
-
-
-
-
-
+.company .company_box .company_content .company_block ul li {
+	margin: 80px 0;
+}
+.company .company_box .company_content .company_block ul li .info {
+	margin-left: 35px;
+}
+.company .company_box .company_content .company_block .percentage {
+	position: relative;
+	z-index: 0;
+	width: 110px;
+	height: 110px;
+	color: var(--grey1);
+	border-radius: 50%;
+	background-color: var(--green1);
+}
+.company .company_box .company_content .company_block .percentage span {
+	position: relative;
+	z-index: 2;
+}
+.company .company_box .company_content .company_block .percentage:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	transform: translate(-50%,-50%);
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+	background-color: var(--dark_blue1);
+}
 .company::after {
 	content: '';
 	position: absolute;
@@ -318,11 +349,6 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	background-size: cover;
 	/* border: 1px dashed red; */
 }
-
-
-
-
-
 
 /****************************************************************
 **  SPONSORS
@@ -598,6 +624,7 @@ textarea:focus {
 	margin-bottom: 25px;
 }
 .txt_small_title {
+	text-transform: capitalize;
 	font-size: 1.5em;
 	font-weight: 700;
 	line-height: 1.8125em; /* 29px */
@@ -620,7 +647,16 @@ textarea:focus {
 	font-weight: 400;
 	line-height: 1.19em; /* 19px */
 }
-
+.txt_percentage {
+	font-size: 2em;
+	font-weight: 700;
+	line-height: 2.5em; /* 40px */
+}
+.txt_percentage2 {
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 2.5em; /* 40px */
+}
 
 
 /****************************************************************
