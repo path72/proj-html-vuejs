@@ -8,21 +8,13 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<!-- *** [ FONT AWESOME ] *** -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-		<!-- *** [ BOOTSTRAP ] *** -->
-		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-		<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 		<!-- *** [ MY CSS ] *** -->
-		<!-- <link rel="stylesheet" href="css/12bool.css"> -->
 		<link rel="stylesheet" href="css/master.css">
 		<!-- *** [ JQUERY - Google CDN ] *** -->
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 		<!-- *** [ Vue.js ] *** -->
 		<!-- development -->
 		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-		<!-- production -->
-		<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
-		<!-- prototyping or learning purposes -->
-		<!-- <script src="https://unpkg.com/vue@next"></script> -->
 		<!-- *** [ AXIOS (after Vue.js) ] *** -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 		<!-- *** [ MY JS - (jQuery doc ready) ] *** -->
@@ -38,7 +30,7 @@
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 							  giorno 1	  giorno 2	  giorno 3*
 		1. html/css struttura	[X]
-		2. html/css sezioni		[X]			[ ]
+		2. html/css sezioni		[X]			[X]
 		3. vue.js header								[ ]
 		4. vue.js footer								[ ]
 													*no mattina
@@ -123,7 +115,7 @@
 			<header>
 
 				<!-- ** ** PRE HEADER ** ** -->
-				<section class="pre_header txt_1">
+				<section class="pre_header txt_small">
 					<div class="wrapper1100 flex-row fx-row-between">
 						<ul class="pre_header_left">
 							<li><a href="#"><i class="fas fa-clock"></i><span>Open Hours: Mon - Sat - 9:00 - 18:00</span></li></a>
@@ -148,7 +140,7 @@
 								<li><a href="" class="flex-row"><div class="logo_left">NEX</div><div class="logo_right">GEN</div></a></li>							
 							</ul>						
 							<!-- ** NAV ** -->
-							<ul class="nav flex-row-cv txt_2">
+							<ul class="nav flex-row-cv txt_nav">
 								<li><a href="#">home</a></li>
 								<li><a href="#">services</a></li>
 								<li><a href="#">skills</a></li>
@@ -176,10 +168,12 @@
 			</header>
 
 			<main>
+
 				<!-- ** ** SERVICES ** ** -->
 				<section class="services flex-row-cv">
 					<div class="wrapper1100 flex-row fx-row-between">
 						<div class="services_left">
+							<!-- ** SEVICES LEFT ** -->
 							<div class="txt_super_title">our business areas</div>
 							<div class="title txt_title">Logistics Services</div>
 							<div class="sub_title txt_sub_title">We are leaders in providing logistics services with a set of cutting edge technologies and a team of experienced and renowned professionals.</div>
@@ -190,6 +184,7 @@
 							</div>
 							<button class="btn_full">read more</button>
 						</div>
+						<!-- ** SEVICES RIGHT ** -->
 						<div class="services_right flex-row-co">
 							<div class="card">
 								<img src="img/gallery-3.jpg" alt="">
@@ -204,6 +199,7 @@
 						</div>
 					</div>
 				</section>
+
 				<!-- ** ** COMPANY ** ** -->
 				<section class="company">
 					<div class="company_bg flex-row">
@@ -251,10 +247,11 @@
 										</div>
 									</li>
 								</ul>
-							</div>
-						</div>
-					</div>
+							</div> <!-- company_block -->
+						</div> <!-- company_content wrapper1100 -->
+					</div> <!-- company_box -->
 				</section>
+
 				<!-- ** ** SPONSORS ** ** -->
 				<section class="sponsors flex-row-cc">
 					<ul class="flex-row-cv">
@@ -266,9 +263,11 @@
 						<li><a href="#"><img src="img/logo-5.png" alt=""></a></li>
 					</ul>
 				</section>
+
 				<!-- ** ** NEWS ** ** -->
 				<section class="news flex-row-cv">
 					<div class="wrapper1100">
+						<!-- ** NEWS TOP ** -->
 						<div class="news_top flex-row fx-row-between">
 							<div class="news_top_left">
 								<div class="txt_super_title">our editorial content</div>
@@ -279,6 +278,7 @@
 								<button class="btn_full">see all</button>
 							</div>
 						</div>
+						<!-- ** NEWS BOTTOM ** -->
 						<div class="news_bottom flex-row fx-row-between">
 							<div class="card">
 								<a href="#">
@@ -298,9 +298,10 @@
 									<div class="small_title txt_small_title_2">Working from home is now a trend</div>
 								</a>
 							</div>
-						</div>
-					</div>
+						</div> <!-- news_bottom -->
+					</div> <!-- wrapper1100 -->
 				</section>
+
 				<!-- ** ** NEWSLETTER ** ** -->
 				<section class="newsletter flex-row-cc">
 					<div class="nexsletter_left">
@@ -314,13 +315,16 @@
 						<button class="btn_full">subscribe</button>
 					</div>
 				</section>
+
 				<!-- ** ** CONTACT ** ** -->
 				<section class="contact flex-row-cv">
 					<div class="wrapper1100 flex-row">
+						<!-- ** CONTACT LEFT ** -->
 						<div class="contact_left">
 							<div class="txt_super_title">send a message</div>
 							<div class="title txt_title">Get in <span class="txt_bg_highlight_1">Touch</span></div>
 							<div class="sub_title txt_sub_title">We will respond to your message as soon as possible.</div>
+							<!-- INPUT FORM -->
 							<form class="flex-col-cv" action="">
 								<div class="form_row flex-row">
 									<input type="text" placeholder="Name" class="txt_input">
@@ -338,27 +342,30 @@
 							</form>
 							<button class="btn_full">send</button>
 						</div>
+						<!-- ** CONTACT RIGHT ** -->
 						<div class="contact_right">
 							<div class="small_title txt_small_title">Example Inc.</div>
 							<div class="sub_title txt_sub_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 							<div class="sub_title txt_sub_title">Praesent diam lacus, dapibus sed imperdiet consectetur.</div>
 							<ul>
-								<li><a href="#"><i class="fas fa-phone-alt"></i><span class="txt_5">+1 (305) 1234-5678</span></a></li>
-								<li><a href="#"><i class="fas fa-envelope"></i><span class="txt_5">hello@example.com</span></a></li>
-								<li><a href="#"><i class="fas fa-map-marker-alt"></i><span class="txt_5">Main Avenue, 987</span></a></li>
+								<li><a href="#"><i class="fas fa-phone-alt"></i><span class="txt_list">+1 (305) 1234-5678</span></a></li>
+								<li><a href="#"><i class="fas fa-envelope"></i><span class="txt_list">hello@example.com</span></a></li>
+								<li><a href="#"><i class="fas fa-map-marker-alt"></i><span class="txt_list">Main Avenue, 987</span></a></li>
 							</ul>
 							<button class="btn_empty green">view map</button>
 						</div>
-					</div>
+					</div> <!-- wrapper1100 -->
 				</section>
+
 			</main>
 
-			<!-- ** ** FOOTER ** ** -->
 			<footer>
+				<!-- ** ** MAIN FOOTER ** ** -->
 				<section class="main_footer flex-row-cv">
 					<div class="wrapper1100 flex-row fx-row-between">
+						<!-- ** MAIN FOOTER LEFT ** -->
 						<div class="main_footer_left">
-							<!-- ** LOGO ** -->
+							<!-- LOGO -->
 							<div class="logo txt_logo_footer">
 								<a href="" class="flex-row"><div class="logo_left">NEX</div><div class="logo_right">GEN</div></a>
 							</div>
@@ -370,6 +377,7 @@
 							</ul>
 							<button class="btn_empty white">get in touch</button>
 						</div>
+						<!-- ** MAIN FOOTER RIGHT ** -->
 						<div class="main_footer_right flex-row-co">
 							<div class="card">
 								<ul>
@@ -404,10 +412,16 @@
 									<li><a href="#"><i class="fas fa-angle-right"></i>Information</a></li>
 								</ul>
 							</div>
-						</div>
+						</div> <!-- main_footer_right -->
+					</div> <!-- wrapper1100 -->
+				</section>
+				<!-- ** ** POST FOOTER ** ** -->
+				<section class="post_footer flex-row-cv">
+					<div class="wrapper1100 flex-row fx-row-between">
+						<div class="post_footer_message txt_small">Enjoy the low price. We are tracking any intention of piracy.</div>
+						<div class="post_footer_message txt_small">© 2020 NEXGEN is Proudly Powered by <a href="#">Codings</a>.</div>
 					</div>
 				</section>
-				<section class="post_footer"></section>
 			</footer>
 
 		</div> <!-- Vue.js main instance #app -->
