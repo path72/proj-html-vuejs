@@ -22,23 +22,11 @@
     --black			: #000000;
 	--black_50		: #00000080;
 	--black_075		: #00000013;
-
 	--almost_black	: #0F0F13;
-		
-	--jumbo: url(../img/jumbo.jpg);
-	
+
 	
 	--river_bed		: #4d5a65;
 	--outer_space	: #252c2f;
-    --section-1-bg-color: #eef4ed;
-    --section-2-bg-color: #111117;
-    --section-3-bg-color: #eef4ed;
-    --section-4-bg-color: #ffffff;
-    --section-5-bg-color: #111117;
-    --section-5-bg-image: url(../../assets/images/bg-1.jpg);
-    --section-6-bg-color: #eef4ed;
-    --footer-bg-color: #111117;
-    --footer-bg-image: url(../../assets/images/bg-10.jpg);
 
 }
 body {
@@ -369,6 +357,25 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	height: 830px;
 	background-color: var(--realwhite);
 	/* border: 1px dashed red; */
+}
+.news .news_top {
+	border: 1px dashed red;
+}
+.news .news_top .news_top_left {
+	border: 1px dashed red;
+
+}
+.news .news_top .news_top_right {
+	border: 1px dashed red;
+}
+.news .news_top .news_top_left .title { 
+	color: var(--dark_petrol);
+}
+.news .news_top .news_top_left .title span { 
+	color: var(--green2);
+}
+.news .news_top .news_top_left .sub_title { 
+	color: var(--grey2);
 }
 
 /****************************************************************
@@ -710,8 +717,10 @@ textarea:focus {
 .fx-row-left    { justify-content: flex-start;    }
 .fx-row-right   { justify-content: flex-end;      }
 .fx-row-between { justify-content: space-between; }
-.fx-col-left  { align-items: flex-start;     }
-.fx-col-right { align-items: flex-end;       }
+.fx-col-left    { align-items: flex-start;        }
+.fx-col-right   { align-items: flex-end;          }
+.fx-col-top     { justify-content: flex-start;    }
+.fx-col-bottom  { justify-content: flex-end;      }
 .fx-grow-0 { flex-grow: 0; }
 .fx-grow-1 { flex-grow: 1; }
 .fx-grow-2 { flex-grow: 2; }
