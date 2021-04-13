@@ -214,7 +214,6 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 }
 .services .services_left {
 	width: 30%;
-	/* height: 200px; */
 	margin-right: 40px;
 	/* border: 1px dashed red; */
 }
@@ -231,9 +230,30 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	margin-right: 15px;
 }
 .services .services_right {
-	width: 70%;
+	width: 65%;
+	/* border: 1px dashed red; */
 }
-
+.services .services_right .card {
+	width: 100%;
+	height: 100%;
+	padding: 45px 60px;
+	border-radius: 10px;
+	background-color: var(--realwhite);
+}
+.services .services_right .card:not(:last-child) {
+	margin-right: 30px;
+}
+.services .services_right .card img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.services .services_right .card .title {
+	color: var(--dark_petrol);
+	margin-bottom: 20px;
+}
+.services .services_right .card .sub_title {
+	color: var(--grey2);
+}
 
 /****************************************************************
 **  COMPANY
@@ -376,7 +396,7 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	color: var(--dark_petrol);
 	margin-bottom: 25px;
 }
-.contact .contact_right .txt_input {
+.contact .contact_right .sub_title {
 	color: var(--grey2);
 	margin-bottom: 20px;
 }
@@ -488,56 +508,52 @@ textarea:focus {
 /****************************************************************
 **  TEXTS
 */
-.txt_montserrat {
+/* .txt_montserrat {
 	font-family: 'Montserrat', sans-serif;
 }
 .txt_poppins {
 	font-family: 'Poppins', sans-serif;
-}
-.txt_logo {
-	font-size: 1.19em;
-	font-weight: 700;
-	letter-spacing: 5px;
-}
+} */
+
 .txt_1 { 
 	/* pre_header */
-	font-size: 0.9em;
+	font-size: 0.875em; /* 14px */
+	font-weight: 400;
 }
 .txt_2 {
 	/* nav */
 	font-size: 1em;
 	font-weight: 500;
 }
-.txt_payoff {
-	/* payoff */
-	font-size: 4.5em;
-	font-weight: 900;
-}
-.txt_3 {
-	/* sub payoff */
-	font-size: 1.5em;
-	font-weight: 400;
-}
-.txt_input {
-	/* inputs */
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1em;
-	font-weight: 400;
-	line-height: 1.5em;
-}
-.txt_4 {
-	/* little titles */
-	font-size: 1.5em;
-	font-weight: 700;
-}
+
 .txt_5 {
 	font-size: 1.19em;
 	font-weight: 400;
 }
+.txt_input {
+	/* input fields */
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.1875em; /* 19px */
+}
 
 /** stsandard text blocks **/
+.txt_logo {
+	font-size: 1.19em; /* 19px */
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+.txt_payoff {
+	font-family: 'Poppins', sans-serif;
+	font-size: 4.5em; /* 72px */
+	font-weight: 900;
+}
+.txt_sub_payoff {
+	font-size: 1.5em;
+	line-height: 1.5em; /* 24px */
+}
 .txt_super_title {
-	/* super titles */
 	display: block;
 	color: var(--green1);
 	text-transform: uppercase;
@@ -547,7 +563,6 @@ textarea:focus {
 	margin-bottom: 25px;
 }
 .txt_title {
-	/* titles */
 	display: block;
 	font-family: 'Poppins', sans-serif;
 	font-size: 3em;
@@ -555,15 +570,18 @@ textarea:focus {
 	line-height: 1.2em;
 	margin-bottom: 25px;
 }
+.txt_small_title {
+	font-size: 1.5em;
+	font-weight: 700;
+	line-height: 1.8125em; /* 29px */
+}
 .txt_sub_title {
-	/* sub titles */
 	display: block;
 	font-size: 1em;
 	font-weight: 400;
-	line-height: 1.5em;
+	line-height: 1.5em; /* 24px */
 }
-.txt_bg1 {
-	/* title bg highlight */
+.txt_bg_highlight_1 {
 	display: inline-block;
 	padding: 4px 15px;
 	border-radius: 4px;
@@ -573,14 +591,14 @@ textarea:focus {
 /****************************************************************
 **  CARD
 */
-.card {
+/* .card {
 	margin: 15px 15px 30px;
 	padding: 30px 50px;
 	color: var(--black);
 	border-radius: 5px;
 	background-color: var(--realwhite);
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
+} */
 
 /****************************************************************
 **  MEDIA QUERIES
