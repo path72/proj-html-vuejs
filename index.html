@@ -352,10 +352,10 @@
 						<div class="small_title txt_small_title">Example Inc.</div>
 						<div class="sub_title txt_sub_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 						<div class="sub_title txt_sub_title">Praesent diam lacus, dapibus sed imperdiet consectetur.</div>
-						<ul class="txt_list">
-							<li><a href="#"><i class="fas fa-phone-alt"></i>+1 (305) 1234-5678</a></li>
-							<li><a href=""><i class="fas fa-envelope"></i>hello@example.com</a></li>
-							<li><a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i>Main Avenue, 987</a></li>
+						<ul class="references txt_list">
+							<li v-for="ref in references">
+								<a :href="ref.hrefPrefix+ref.text" :target="ref.target"><i :class="ref.iconClass"></i>{{ref.text}}</a>
+							</li>
 						</ul>
 						<ul class="flex-row">
 							<li><a href="#" class="btn btn_empty green">view map</a></li>
@@ -379,9 +379,9 @@
 						</div>
 						<div class="sub_title txt_sub_title">A Functional HTML Template for Corporate & Business.</div>
 						<ul class="references">
-							<li><a href="#"><i class="fas fa-phone-alt"></i>+1 (305) 1234-5678</a></li>
-							<li><a href=""><i class="fas fa-envelope"></i>hello@example.com</a></li>
-							<li><a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i>Main Avenue, 987</a></li>
+							<li v-for="ref in references">
+								<a :href="ref.hrefPrefix+ref.text" :target="ref.target"><i :class="ref.iconClass"></i>{{ref.text}}</a>
+							</li>
 						</ul>
 						<ul class="flex-row">
 							<li><a href="#" class="btn btn_empty white">get in touch</a></li>

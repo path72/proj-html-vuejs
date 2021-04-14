@@ -6,63 +6,64 @@ var app = new Vue(
 	{
 		el: '#app',
 		data: {
-			references: {
-				phone 	 : { 
-					number: '+1 (305) 1234-5678', // tel:
-					iconCLass: 'fas fa-phone-alt'
+			references: [
+				{ 
+					text		: '+1 (305) 1234-5678',
+					iconClass	: 'fas fa-phone-alt',
+					hrefPrefix	: 'tel:',
+					target		: '_self'
 				},
-				email	 : { 
-					address: 'hello@example.com', // mailto: 
-					iconClass: 'fas fa-envelope'
+				{ 
+					text		: 'hello@example.com',
+					iconClass	: 'fas fa-envelope',
+					hrefPrefix	: 'mailto:',
+					target		: '_self'
 				},
-				location : {
-					address: 'Main Avenue, 987', // http://maps.google.com/?q=Main Avenue, 987
-					iconClass: 'fas fa-map-marker-alt'
+				{
+					text		: 'Main Avenue, 987',
+					iconClass	: 'fas fa-map-marker-alt',
+					hrefPrefix	: 'http://maps.google.com/?q=',
+					target		: '_black'
 				} 
-			},
+			],
+			pippo: 'ciccio',
 			headerInfoMenu: [],
 			headerMainMenu: [
 				{
 					entry: 'home',
-					type: 'link',
 					activeLink: true,
 					href: '',
 					class: ''
 				},
 				{
 					entry: 'services',
-					type: 'link',
 					activeLink: true,
 					href: '',
 					class: ''
 				},
 				{
 					entry: 'skills',
-					type: 'link',
 					activeLink: true,
 					href: '',
 					class: ''
 				},
 				{
 					entry: 'partners',
-					type: 'link',
 					activeLink: true,
 					href: '',
 					class: ''
 				},
 				{
 					entry: 'blog',
-					type: 'link',
 					activeLink: true,
 					href: '',
 					class: ''
 				},
 				{
 					entry: 'get in touch',
-					type: 'button',
 					activeLink: true,
 					href: '',
-					class: ''
+					class: 'btn btn_full txt_btn'
 				},
 			],
 			footerLinks: [
@@ -108,6 +109,10 @@ var app = new Vue(
 			]
 		},
 		methods: {
+			getReference(ref) {
+				return `<a href="${ref.href}"><i :class="${ref.iconClass}"></i>${ref.text}</a>`;
+				
+			}
 		},
 		computed: {
 		},
