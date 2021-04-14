@@ -373,7 +373,7 @@
 						<div class="card" v-for="menu in footerMenus">
 							<ul>
 								<li :class="menu.titleClass">{{menu.title}}</li>
-								<li v-for="link in menu.links"><a href="link.href"><i :class="menu.linkIconClass"></i>{{link.text}}</a></li>
+								<li v-for="link in menu.links"><a :href="link.href"><i :class="menu.linkIconClass"></i>{{link.text}}</a></li>
 							</ul>
 						</div>
 					</div> <!-- main_footer_right -->
