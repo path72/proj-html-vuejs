@@ -143,12 +143,9 @@
 						</div>
 						<!-- ** NAV ** -->
 						<ul class="nav flex-row-cv txt_nav">
-							<li><a href="#"><span>home</span></a></li>
-							<li><a href="#"><span>services</span></a></li>
-							<li><a href="#"><span>skills</span></a></li>
-							<li><a href="#"><span>partners</span></a></li>
-							<li><a href="#"><span>blog</span></a></li>
-							<li><a href="#" class="btn btn_full txt_btn">get in touch</a></li>
+							<li v-for="entry in headerNavEntries">
+								<a :href="entry.href" :class="entry.class" ><span>{{entry.text}}</span></a>
+							</li>
 						</ul>
 					</div>
 				</div> <!-- header_nav -->

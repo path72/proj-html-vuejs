@@ -26,43 +26,42 @@ var app = new Vue(
 					target		: '_black'
 				} 
 			],
-			pippo: 'ciccio',
 			headerInfoMenu: [],
-			headerMainMenu: [
+			headerNavEntries: [
 				{
-					entry: 'home',
+					text: 'home',
 					activeLink: true,
-					href: '',
+					href: '#',
 					class: ''
 				},
 				{
-					entry: 'services',
+					text: 'services',
 					activeLink: true,
-					href: '',
+					href: '#',
 					class: ''
 				},
 				{
-					entry: 'skills',
+					text: 'skills',
 					activeLink: true,
-					href: '',
+					href: '#',
 					class: ''
 				},
 				{
-					entry: 'partners',
+					text: 'partners',
 					activeLink: true,
-					href: '',
+					href: '#',
 					class: ''
 				},
 				{
-					entry: 'blog',
+					text: 'blog',
 					activeLink: true,
-					href: '',
+					href: '#',
 					class: ''
 				},
 				{
-					entry: 'get in touch',
+					text: 'get in touch',
 					activeLink: true,
-					href: '',
+					href: '#',
 					class: 'btn btn_full txt_btn'
 				},
 			],
