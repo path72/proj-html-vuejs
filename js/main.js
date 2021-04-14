@@ -87,12 +87,12 @@ var app = new Vue(
 					title: 'About',
 					titleClass: 'small_title txt_small_title',
 					links: [ 
-						{ text: 'The Company', href: '#' },
-						{ text: 'Institutional', href: '#' },
-						{ text: 'Social & Events', href: '#' },
-						{ text: 'Innovation', href: 'https://www.phibbi.com/generatore/stronzate-web-economy/' },
-						{ text: 'Environment', href: '#' },
-						{ text: 'Technology', href: '#' }
+						{ text: 'The Company', href: '#', target: '' },
+						{ text: 'Institutional', href: '#', target: '' },
+						{ text: 'Social & Events', href: '#', target: '' },
+						{ text: 'Innovation', href: 'https://www.phibbi.com/generatore/stronzate-web-economy/', target: '_blank' },
+						{ text: 'Environment', href: '#', target: '' },
+						{ text: 'Technology', href: '#', target: '' }
 					],
 					linkIconClass: 'fas fa-angle-right'
 				},
@@ -100,12 +100,12 @@ var app = new Vue(
 					title: 'Transport',
 					titleClass: 'small_title txt_small_title',
 					links: [
-						{ text: 'Industrialized', href: '#' },
-						{ text: 'Chemicals', href: '#' },
-						{ text: 'Packaged Liquids', href: '#' },
-						{ text: 'Construction', href: '#' },
-						{ text: 'Laminated Wood', href: '#' },
-						{ text: 'And others', href: '#' }
+						{ text: 'Industrialized', href: '#', target: '' },
+						{ text: 'Chemicals', href: '#', target: '' },
+						{ text: 'Packaged Liquids', href: '#', target: '' },
+						{ text: 'Construction', href: '#', target: '' },
+						{ text: 'Laminated Wood', href: '#', target: '' },
+						{ text: 'And others', href: '#', target: '' }
 					],
 					linkIconClass: 'fas fa-angle-right'
 				},
@@ -113,12 +113,12 @@ var app = new Vue(
 					title: 'Support',
 					titleClass: 'small_title txt_small_title',
 					links: [
-						{ text: 'Responsibility', href: '#' },
-						{ text: 'Terms of Use', href: '#' },
-						{ text: 'About Cookies', href: '#' },
-						{ text: 'Privacy Policy', href: '#' },
-						{ text: 'Accessibility', href: '#' },
-						{ text: 'Information', href: '#' }
+						{ text: 'Responsibility', href: '#', target: '' },
+						{ text: 'Terms of Use', href: '#', target: '' },
+						{ text: 'About Cookies', href: '#', target: '' },
+						{ text: 'Privacy Policy', href: '#', target: '' },
+						{ text: 'Accessibility', href: '#', target: '' },
+						{ text: 'Information', href: '#', target: '' }
 					],
 					linkIconClass: 'fas fa-angle-right'
 				}
