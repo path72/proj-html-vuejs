@@ -7,25 +7,23 @@
     box-sizing: border-box;
 }
 :root {
-    --realwhite: #ffffff;
-    --realwhite_85: #ffffffd9;
-    --realwhite_50: #ffffff80;
-    --realwhite_04: #ffffff0a;
-    --white: #f9f9f9;
-    --saltpan: #eef4ed;
-    --grey1: #c0c3d0;
-    --grey2: #606d75;
-    --green1: #00a6a6;
-    --green1_15: #00a6a626;
-    --green1_30: #00a8a84d;
-    --green2: #058283;
-    --petrol: #21333e;
-    --lighter_night: #23242A;
-    --night: #111117;
-    --almost_black: #0F0F13;
-    --black: #000000;
-    --black_50: #00000080;
-    --black_075: #00000013;
+    --realwhite     : #ffffff;
+    --realwhite_85  : #ffffffd9;
+    --realwhite_50  : #ffffff80;
+    --realwhite_04  : #ffffff0a;
+    --white         : #f9f9f9;
+    --saltpan       : #eef4ed;
+    --grey1         : #c0c3d0;
+    --grey2         : #606d75;
+    --green1        : #00a6a6;
+    --green1_15     : #00a6a626;
+    --green2        : #058283;
+    --petrol        : #21333e;
+    --lighter_night : #23242A;
+    --night         : #111117;
+    --almost_black  : #0F0F13;
+    --black         : #000000;
+    --black_075     : #00000013;
 }
 body {
     font-family: 'Montserrat', sans-serif;
@@ -36,6 +34,7 @@ body {
 }
 a {
     text-decoration: none;
+	transition: color .2s ease;
 }
 ul {
     list-style: none;
@@ -95,7 +94,8 @@ header .jumbo_header::after {
     z-index: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--black_50);
+    background-color: var(--black);
+	opacity: .5;
 }
 header .jumbo_header .header_nav {
     position: relative;
@@ -106,8 +106,32 @@ header .jumbo_header .header_nav.fixed {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: var(--petrol);
+    /* background-color: var(--petrol); */
 }
+header .jumbo_header .header_nav::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+    background-color: var(--petrol);
+	opacity: 0;
+	transition: opacity 0.5s linear;
+}
+header .jumbo_header .header_nav.fixed::after {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
 header .jumbo_header .header_nav_content {
     height: 46px;
     padding-left: 5px;
@@ -159,7 +183,8 @@ header .jumbo_header .jumbo_payoff .payoff .decor::after {
     width: 100%;
     height: 36%;
     border-radius: 4px;
-    background-color: var(--green1_30);
+    background-color: var(--green1);
+	opacity: .3;
 }
 header .jumbo_header .jumbo_payoff .payoff .decor span {
     position: relative;
@@ -210,6 +235,10 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
     padding: 45px 60px;
     border-radius: 10px;
     background-color: var(--realwhite);
+	transition: all .6s ease;
+}
+.services .services_right .card:hover {
+	transform: translateY(-10px);
 }
 .services .services_right .card:not(:last-child) {
     margin-right: 30px;
@@ -286,14 +315,20 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 .company .company_box .company_content .company_block .sub_title {
     color: var(--grey1);
 }
-.company .company_box .company_content .company_block ul li:not(:last-child) {
+.company .company_box .company_content .company_block li:not(:last-child) {
     margin: 82px 0;
 }
-.company .company_box .company_content .company_block ul li .info {
+.company .company_box .company_content .company_block li .info {
     margin-left: 35px;
 }
 
 /** PIE CHART LIST **/
+.company .company_box .company_content .company_block li .pie_chart {
+	transition: all .6s ease;
+}
+.company .company_box .company_content .company_block li:hover .pie_chart {
+	transform: scale(1.1);
+}
 .company .company_box .company_content .company_block .pie_chart span { /* percentage */
     color: var(--grey1);
     position: relative;
@@ -405,7 +440,12 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--black_50);
+    background-color: var(--black);
+	opacity: .5;
+	transition: opacity .3s ease;
+}
+.news .news_bottom .card:hover::after {
+    opacity: .7;
 }
 .news .news_bottom .card img {
     width: 100%;
@@ -420,6 +460,10 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
     color: var(--white);
     text-align: center;
     padding: 0 30px;
+	transition: bottom .3s ease;
+}
+.news .news_bottom .card:hover .small_title {
+	bottom: 80px;
 }
 
 /****************************************************************
@@ -514,6 +558,10 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
     background-color: var(--green1_15);
     font-size: 1.1em;
     margin: 0 15px 20px 0;
+	transition: all .3s ease;
+}
+.contact .contact_right ul.references li:hover .fas {
+	transform: scale(1.2);
 }
 
 /****************************************************************
@@ -550,6 +598,10 @@ footer .main_footer .main_footer_left ul.references li a:hover {
 }
 footer .main_footer .main_footer_left ul li .fas {
     margin-right: 13px;
+	transition: all .3s ease;
+}
+footer .main_footer .main_footer_left ul li:hover .fas {
+	transform: scale(1.2);
 }
 
 /** MAIN FOOTER RIGHT **/
@@ -561,6 +613,10 @@ footer .main_footer .main_footer_right .card {
     padding: 38px 48px;
     border-radius: 10px;
     background-color: var(--realwhite_04);
+	transition: all .6s ease;
+}
+footer .main_footer .main_footer_right .card:hover {
+	transform: translateY(-10px);
 }
 footer .main_footer .main_footer_right .card:not(:last-child) {
     margin-right: 30px;
@@ -609,6 +665,10 @@ footer .post_footer .post_footer_message a {
     border-radius: 4px;
     outline: none;
     cursor: pointer;
+	transition: 
+		background .3s ease,
+		color .3s ease,
+		border-color .3s ease;
 }
 
 /** BTN 1 **/

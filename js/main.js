@@ -155,7 +155,7 @@ var app = new Vue(
 
 let headerNav = document.getElementsByClassName('header_nav')[0];
 window.onscroll = (e) => {
-	if (window.scrollY > 0)
+	if (window.scrollY > 50)
 		headerNav.className += " fixed";
 	else
 		headerNav.className = " header_nav";
