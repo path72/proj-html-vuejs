@@ -370,37 +370,10 @@
 					</div>
 					<!-- ** MAIN FOOTER RIGHT ** -->
 					<div class="main_footer_right flex-row-co">
-						<div class="card">
+						<div class="card" v-for="menu in footerMenus">
 							<ul>
-								<li class="small_title txt_small_title">About</li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>The Company</a></li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>Institutional</a></li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>Social & Events</a></li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>Innovation</a></li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>Environment</a></li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>Technology</a></li>
-							</ul>
-						</div>
-						<div class="card">
-							<ul>
-								<li class="small_title txt_small_title">Transport</li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>Industrialized</a></li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>Chemicals</a></li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>Packaged Liquids</a></li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>Construction</a></li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>Laminated Wood</a></li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>And others</a></li>
-							</ul>
-						</div>
-						<div class="card">
-							<ul>
-								<li class="small_title txt_small_title">Support</li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>Responsibility</a></li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>Terms of Use</a></li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>About Cookies</a></li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>Privacy Policy</a></li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>Accessibility</a></li>
-								<li><a href="#"><i class="fas fa-angle-right"></i>Information</a></li>
+								<li :class="menu.titleClass">{{menu.title}}</li>
+								<li v-for="link in menu.links"><a href="link.href"><i :class="menu.linkIconClass"></i>{{link.text}}</a></li>
 							</ul>
 						</div>
 					</div> <!-- main_footer_right -->
