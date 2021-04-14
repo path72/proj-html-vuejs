@@ -32,12 +32,10 @@ body {
     background-color: var(--saltpan);
     color: var(--white);
     font-size: 16px;
-    /* min-width: 1200px;  */
-    /* desktop limit */
+    min-width: 1200px; /* desktop limit */
 }
 a {
     text-decoration: none;
-    /* color: var(--black); */
 }
 ul {
     list-style: none;
@@ -141,7 +139,6 @@ header .jumbo_header .jumbo_payoff {
     z-index: 1;
     transform: translateY(-50%);
     width: 500px;
-    /* border: 1px dashed red; */
 }
 header .jumbo_header .jumbo_payoff .payoff {
     position: relative;
@@ -173,7 +170,7 @@ header .jumbo_header .jumbo_payoff .sub_payoff {
     margin-bottom: 48px;
     color: var(--grey1);
 }
-header .jumbo_header .jumbo_payoff .btn_row li+li {
+header .jumbo_header .jumbo_payoff .btn_row li + li {
     margin-left: 24px;
 }
 
@@ -182,17 +179,13 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
 */
 .services {
     position: relative;
-    width: 100%;
-    height: 727px;
-    padding: 120px 0;
-    /* border: 1px dashed red; */
+    padding: 147px 0;
 }
 
 /** SEVICES LEFT **/
 .services .services_left {
     width: 30%;
-    margin-right: 40px;
-    /* border: 1px dashed red; */
+    margin-right: 30px;
 }
 .services .services_left .txt_title {
     color: var(--petrol);
@@ -201,7 +194,7 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
     color: var(--grey2);
 }
 .services .services_left .btn_row {
-    margin: 25px 0;
+    margin-top: 24px;
 }
 .services .services_left .btn_row .btn {
     margin-right: 15px;
@@ -210,7 +203,6 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
 /** SEVICES RIGHT **/
 .services .services_right {
     width: 65%;
-    /* border: 1px dashed red; */
 }
 .services .services_right .card {
     width: 100%;
@@ -224,11 +216,11 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
 }
 .services .services_right .card img {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 .services .services_right .card .small_title {
     color: var(--petrol);
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 .services .services_right .card .sub_title {
     color: var(--grey2);
@@ -255,10 +247,9 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
 .company {
     position: relative;
     width: 100%;
-    height: 1029px;
+    height: 1030px;
 }
 .company .company_bg {
-    width: 100%;
     height: 100%;
 }
 .company .company_bg_left {
@@ -277,16 +268,13 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
     left: 0;
     width: 100%;
     height: 100%;
-    /* border: 1px dashed green; */
 }
 .company .company_box .company_content {
     height: 100%;
-    /* border: 1px dashed red; */
 }
 .company .company_box .company_content .company_block {
     width: 50%;
     padding-right: 50px;
-    /* border: 1px dashed red; */
 }
 .company .company_box .company_content .company_block .title {
     color: var(--realwhite);
@@ -298,20 +286,20 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
 .company .company_box .company_content .company_block .sub_title {
     color: var(--grey1);
 }
-.company .company_box .company_content .company_block ul li {
-    margin: 80px 0;
+.company .company_box .company_content .company_block ul li:not(:last-child) {
+    margin: 82px 0;
 }
 .company .company_box .company_content .company_block ul li .info {
     margin-left: 35px;
 }
 
 /** PIE CHART LIST **/
-.company .company_box .company_content .company_block .pie_chart span {
+.company .company_box .company_content .company_block .pie_chart span { /* percentage */
     color: var(--grey1);
     position: relative;
     z-index: 2;
 }
-.company .company_box .company_content .company_block .pie_chart {
+.company .company_box .company_content .company_block .pie_chart { /* outer circle */
     position: relative;
     width: 110px;
     height: 110px;
@@ -320,7 +308,7 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
     background: var(--green1);
     background-image: linear-gradient(to bottom, transparent 50%, var(--lighter_night) 0);
 }
-.company .company_box .company_content .company_block .pie_chart:after {
+.company .company_box .company_content .company_block .pie_chart:after { /* inner circle */
     content: "";
     position: absolute;
     top: 50%;
@@ -332,7 +320,7 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
     border-radius: 50%;
     background-color: var(--night);
 }
-.company .company_box .company_content .company_block .pie_chart::before {
+.company .company_box .company_content .company_block .pie_chart::before { /* rotating element */
     content: "";
     display: block;
     position: absolute;
@@ -340,17 +328,17 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
     left: 0;
     width: 100%;
     height: 50%;
-    background-color: inherit;
-    transform-origin: 50% 0;
+    background-color: inherit; /* background-color: solo il background, non il gradiente */ 
+    transform-origin: 50% 0;   /* qui sta il trucco! */
 }
 .company .company_box .company_content .company_block .pie_chart.value1::before {
-    transform: rotate(-.08turn);
+    transform: rotate(-.08turn); /* 92=100-8 */
 }
 .company .company_box .company_content .company_block .pie_chart.value2::before {
-    transform: rotate(-.00turn);
+    transform: rotate(-.00turn); /* 100=100-0 */
 }
 .company .company_box .company_content .company_block .pie_chart.value3::before {
-    transform: rotate(-.15turn);
+    transform: rotate(-.15turn); /* 85=100-15 */
 }
 
 /** DOTS 2 **/
@@ -366,14 +354,13 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
     opacity: 0.30;
     background-image: url(../img/bullets.png);
     background-size: cover;
-    /* border: 1px dashed red; */
 }
 
 /****************************************************************
 **  SPONSORS
 */
 .sponsors {
-    height: 285px;
+	padding: 78px 0;
 }
 .sponsors img {
     height: 25px;
@@ -385,15 +372,13 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
 **  NEWS
 */
 .news {
-    height: 830px;
+	padding: 131px 0;
     background-color: var(--realwhite);
-    /* border: 1px dashed red; */
 }
 
 /** NEWS TOP **/
 .news .news_top {
     margin-bottom: 50px;
-    /* border: 1px dashed red; */
 }
 .news .news_top .news_top_left .title {
     color: var(--petrol);
@@ -441,20 +426,16 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
 **  NEWSLETTER
 */
 .newsletter {
-    height: 456px;
-    padding: 100px 100px;
+	padding: 135px 0;
     background-image: url(../img/bg-1.jpg);
     background-position: center 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* border: 1px dashed red; */
 }
 .newsletter .nexsletter_left {
     width: 450px;
-    height: 200px;
-    margin: 0 25px;
-    /* border: 1px dashed red; */
+    margin-right: 45px;
 }
 .newsletter .nexsletter_left .title {
     color: var(--white);
@@ -462,15 +443,11 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
 .newsletter .nexsletter_left .sub_title {
     color: var(--grey1);
 }
-
 .newsletter .nexsletter_right {
-    width: 400px;
-    height: 200px;
-    margin: 0 25px;
-    /* border: 1px dashed red; */
+    width: 435px;
 }
 .newsletter .nexsletter_right input {
-    width: 435px;
+    width: 100%;
     background-color: var(--realwhite_50);
     margin-bottom: 20px;
 }
@@ -482,16 +459,13 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
 **  CONTACT
 */
 .contact {
-    width: 100%;
-    height: 848px;
-    /* border: 1px dashed red; */
+	padding: 125px 0;
 }
 
 /** CONTACT LEFT **/
 .contact .contact_left {
     width: 65%;
     margin-right: 40px;
-    /* border: 1px dashed red; */
 }
 .contact .contact_left .title {
     color: var(--petrol);
@@ -503,9 +477,7 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
     color: var(--grey2);
 }
 .contact .contact_left form {
-    width: 100%;
-    margin: 80px 0;
-    margin-bottom: 15px;
+    margin: 60px 0 15px 0;
 }
 .contact .contact_left form input,
 .contact .contact_left form select,
@@ -513,7 +485,6 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
     min-width: 350px;
     background-color: var(--black_075);
     margin: 0 15px 15px 0;
-    /* border: 1px dashed red; */
 }
 .contact .contact_left textarea {
     height: 150px;
@@ -522,7 +493,6 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
 /** CONTACT RIGHT **/
 .contact .contact_right {
     width: 35%;
-    /* border: 1px dashed red; */
 }
 .contact .contact_right .small_title {
     color: var(--petrol);
@@ -537,11 +507,12 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
 }
 .contact .contact_right ul.references li .fas {
     width: 45px;
+    height: 45px;
     text-align: center;
-    padding: 12px;
+    padding: 13px 0;
     border-radius: 50%;
     background-color: var(--green1_15);
-    font-size: 1.3em;
+    font-size: 1.1em;
     margin: 0 15px 20px 0;
 }
 
@@ -549,23 +520,21 @@ header .jumbo_header .jumbo_payoff .btn_row li+li {
 **  MAIN FOOTER
 */
 footer .main_footer {
-    height: 621px;
+	padding: 142px 0;
     background-image: url(../img/bg-10.jpg);
     background-position: center 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* border: 1px dashed red; */
 }
 
 /** MAIN FOOTER LEFT **/
 footer .main_footer .main_footer_left {
-    width: 22%;
-    margin-right: 40px;
-    /* border: 1px dashed red; */
+    width: 25%;
+	padding-right: 30px;
 }
 footer .main_footer .main_footer_left .logo,
-footer .main_footer .main_footer_left ul {
+footer .main_footer .main_footer_left ul.references {
     margin-bottom: 25px;
 }
 footer .main_footer .main_footer_left .sub_title {
@@ -586,14 +555,12 @@ footer .main_footer .main_footer_left ul li .fas {
 /** MAIN FOOTER RIGHT **/
 footer .main_footer .main_footer_right {
     width: 75%;
-    /* border: 1px dashed red; */
 }
 footer .main_footer .main_footer_right .card {
     width: 100%;
-    padding: 40px 46px;
+    padding: 38px 48px;
     border-radius: 10px;
     background-color: var(--realwhite_04);
-    /* border: 1px dashed red; */
 }
 footer .main_footer .main_footer_right .card:not(:last-child) {
     margin-right: 30px;
@@ -618,7 +585,7 @@ footer .main_footer .main_footer_right .card ul li .fas {
 **  POST FOOTER
 */
 footer .post_footer {
-    height: 89px;
+	padding: 32px 0;
     background-color: var(--almost_black);
 }
 footer .post_footer .post_footer_message {
@@ -717,14 +684,11 @@ textarea:focus {
 }
 .txt_logo {
     font-size: 1.19em;
-    /* 19px */
     font-weight: 700;
     letter-spacing: 5px;
-    /* line-height: 1.19em; */
 }
 .txt_logo_footer {
     font-size: 1.5em;
-    /* 24px */
     font-weight: 700;
     letter-spacing: 5px;
     line-height: 2.2em;
@@ -732,13 +696,11 @@ textarea:focus {
 .txt_payoff {
     font-family: 'Poppins', sans-serif;
     font-size: 4.5em;
-    /* 72px */
     font-weight: 900;
 }
 .txt_sub_payoff {
     font-size: 1.5em;
     line-height: 1.5em;
-    /* 24px */
 }
 .txt_super_title {
     display: block;
@@ -763,13 +725,11 @@ textarea:focus {
     font-size: 1.5em;
     font-weight: 700;
     line-height: 1.8125em;
-    /* 29px */
 }
 .txt_small_title_2 {
     font-size: 1.5em;
     font-weight: 700;
     line-height: 1.2em;
-    /* 29px */
 }
 .txt_sub_title {
     display: block;
@@ -788,24 +748,20 @@ textarea:focus {
     font-size: 1em;
     font-weight: 400;
     line-height: 1.19em;
-    /* 19px */
 }
 .txt_percentage {
     font-size: 2em;
     font-weight: 700;
     line-height: 2.5em;
-    /* 40px */
 }
 .txt_percentage2 {
     font-size: 1em;
     font-weight: 700;
     line-height: 2.5em;
-    /* 40px */
 }
 .txt_small {
     /* pre_header, post_footer */
     font-size: 0.875em;
-    /* 14px */
     font-weight: 400;
     line-height: 1.8em;
 }
@@ -816,28 +772,12 @@ textarea:focus {
 }
 
 /****************************************************************
-**  MEDIA QUERIES
-*/
-
-/*-------- BOOTSTRAP media queries ---------*/
-/* XS >= 0 - default - SEE ABOVE */
-/* SM >= 768 */
-@media screen and (min-width: 768px) {}
-/* MD >= 992 */
-@media screen and (min-width: 992px) {}
-/* LG >= 1200 */
-@media screen and (min-width: 1200px) {}
-
-/*------------------------------------------*/
-
-/****************************************************************
 **  UTILITY
 */
 /* wrappes */
 .wrapper1100 {
     width: 1150px;
     margin: 0 auto;
-    /* border: 1px dashed red; */
 }
 /* flex structure */
 .flex-row    { display: flex;                                               }

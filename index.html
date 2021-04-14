@@ -12,15 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <!-- *** [ MY CSS ] *** -->
     <link rel="stylesheet" href="css/master.css">
-    <!-- *** [ JQUERY - Google CDN ] *** -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <!-- *** [ Vue.js ] *** -->
     <!-- development -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- *** [ AXIOS (after Vue.js) ] *** -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
-    <!-- *** [ MY JS - (jQuery doc ready) ] *** -->
-    <!-- <script type="text/javascript" src="js/main.js"></script> -->
     <!-- *** *** -->
     <link rel="shortcut icon" href="#">
     <title>proj-html-vuejs</title>
@@ -28,42 +24,22 @@
 
 <body>
 
-    <!-----------------------------------------
+    <!-------------------------------------------------------------------------------------
 			
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 							  giorno 1	  giorno 2	  giorno 3*
+							   12/04	   13/04	   14/04
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		1. html/css struttura	[X]
 		2. html/css sezioni		[X]			[X]
-		3. vue.js header								[ ]
-		4. vue.js footer								[ ]
-													*no mattina
+		3. vue.js header								[X]
+		4. vue.js footer								[X]
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-		Progetto HTML/VueJS
-		Repo: proj-html-vuejs
-
-		Cosa fare
-		Riprodurre il layout proposto solo in versione Desktop
-
-		Tecnologie:
-		HTML/CSS/VueJs
-		Aggiungere Header e Footer con VueJs creando una struttura dati 
-		che consenta di inserire i link nelle navbar. 
-		Su questo non ci sono API da interrogare, ma create i dati a mano nel vostro js.
-
+													*no mattina
 		Deadline
 		Giovedì 15 ore 18.00
 
-		Supporto
-		Lunedì (pomeriggio), Martedì e Mercoledì (pomeriggio) 
-		potrete prenotare uno slot al giorno di 10 minuti 
-		con un insegnante per poter porre domande di approfondimento/chiarimento sul progetto.
-		Pushate almeno 15 minuti prima del vostro appuntamento 
-		con un insegnante e preparate prima le vostre domande 
-		è importante arrivare con le idee chiare per poter ricevere il massimo supporto.
-		Ricordate avete 10 minuti a testa, potrete chiedere un numero limitato di consigli.
-		Non sarà possibile invece aprire le consuete richieste Hotwell
-		e non avrete supporto l’ultimo giorno di progetto (il giorno della deadline).
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 		
 		Presentazione dei progetti
 		I lavori saranno presentati Venerdì 16 
@@ -71,53 +47,13 @@
 		sarà indispensabile quindi prenotare uno slot per poter parlare con un insegnante.
 		Non si tratterà del classico Feedback, ma dovrete presentare il vostro progetto.
 
-		Consigli per lo svolgimento del progetto
-		Organizzazione del lavoro
-		Analizzate attentamente il layout prima di partire, 
-		utilizzate sempre il metodo dei commenti per identificare le aree del layout 
-		e individuare elementi comuni riutilizzabili.
-		Una volta analizzato il progetto create una tabella di marcia, 
-		il lavoro è divisibile in due fasi, layout / funzionalità VueJs, 
-		è indispensabile consegnare entrambe le parti del progetto.
-	
-		Immaginate quindi cosa vi servirà per l’aggiunta delle parti dinamiche 
-		e scrivete i commenti anche per questa parte di lavoro.
-		Meglio un layout con header/footer e 2 o 3 sezioni complete, 
-		che un layout completo ma senza VueJs. 
-		Teniamo presente che l’ideale è sempre consegnare il lavoro completo.
-		Procedete poi con il layout sezione per sezione 
-		raggiungendo un livello di dettaglio il più simile a quello proposto dal designer.
-		
-		Ricordate: il designer ha lavorato duramente per immaginare il layout 
-		e ha scelto certe soluzioni per ottime motivazioni, 
-		il nostro compito è rendere reale la sua creatività!
-
-		Calcolate poi il momento giusto per poter passare alla parte VueJs tenendo presente la Deadline.
-
-		GIT
-		Create un primo commit con lo scaffolding, 
-		un secondo con i commenti, e così via all’aggiunta di ogni piccolo frammento.
-
-		Pushare con regolarità vi consentirà: 
-		> di non perdere versioni del vostro lavoro. 
-			Il vostro datore di lavoro venerdì pretenderà di ricevere il lavoro commissionato, 
-			nella vita lavorativa non è possibile dire “ho perso il lavoro svolto”;
-		> di ricevere una migliore assistenza e valutazione da parte dei vostri insegnanti 
-			che controlleranno i vostri lavori durante tutto lo svolgimento del progetto.
-
-		Come affrontare il lavoro
-		Affrontate il progetto a mente serena allontanando ogni ansia, 
-		divertitevi mentre mettete in pratica i concetti imparati fino ad ora, 
-		focalizzate il vero obiettivo: domani questa sarà la vostra giornata tipo.
-		In bocca al lupo e buon divertimento!
-
-		------------------------------------------>
+	-------------------------------------------------------------------------------------->
 
 	<div id="app">
 
 		<header>
 
-			<!-- ** ** PRE HEADER ** ** -->
+			<!-- ** // ** PRE HEADER ** // ** -->
 			<section class="pre_header txt_small">
 				<div class="wrapper1100 flex-row fx-row-between">
 					<references class="pre_header_left" :list="references" :select="[0]"></references>
@@ -125,9 +61,9 @@
 				</div>
 			</section>
 
-			<!-- ** ** JUMBO HEADER ** ** -->
+			<!-- ** // ** JUMBO HEADER ** // ** -->
 			<section class="jumbo_header">
-				<div class="header_nav fix ed">
+				<div class="header_nav">
 					<div class="header_nav_content wrapper1100 flex-row fx-row-between">
 						<!-- ** LOGO ** -->
 						<div class="logo txt_logo">
@@ -156,8 +92,8 @@
 
 		<main>
 
-			<!-- ** ** SERVICES ** ** -->
-			<section class="services flex-row-cv">
+			<!-- ** // ** SERVICES ** // ** -->
+			<section class="services">
 				<div class="wrapper1100 flex-row fx-row-between">
 					<!-- ** SEVICES LEFT ** -->
 					<div class="services_left">
@@ -189,7 +125,7 @@
 				</div>
 			</section>
 
-			<!-- ** ** COMPANY ** ** -->
+			<!-- ** // ** COMPANY ** // ** -->
 			<section class="company">
 				<div class="company_bg flex-row">
 					<div class="company_bg_left"></div>
@@ -236,14 +172,14 @@
 										<div class="sub_title txt_sub_title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
 									</div>
 								</li>
-							</ul>
+							</ul> <!-- pie chart list -->
 						</div> <!-- company_block -->
 					</div> <!-- company_content wrapper1100 -->
 				</div> <!-- company_box -->
 			</section>
 
-			<!-- ** ** SPONSORS ** ** -->
-			<section class="sponsors flex-row-cc">
+			<!-- ** // ** SPONSORS ** // ** -->
+			<section class="sponsors flex-row-co">
 				<ul class="flex-row-cv">
 					<li><a href="#"><img src="img/logo-5.png" alt=""></a></li>
 					<li><a href="#"><img src="img/logo-1.png" alt=""></a></li>
@@ -254,8 +190,8 @@
 				</ul>
 			</section>
 
-			<!-- ** ** NEWS ** ** -->
-			<section class="news flex-row-cv">
+			<!-- ** // ** NEWS ** // ** -->
+			<section class="news">
 				<div class="wrapper1100">
 					<!-- ** NEWS TOP ** -->
 					<div class="news_top flex-row fx-row-between">
@@ -292,8 +228,8 @@
 				</div> <!-- wrapper1100 -->
 			</section>
 
-			<!-- ** ** NEWSLETTER ** ** -->
-			<section class="newsletter flex-row-cc">
+			<!-- ** // ** NEWSLETTER ** // ** -->
+			<section class="newsletter flex-row-co">
 				<div class="nexsletter_left">
 					<div class="txt_super_title">newsletter</div>
 					<div class="title txt_title"><span class="txt_bg_highlight_1">know</span> first</div>
@@ -308,8 +244,8 @@
 				</div>
 			</section>
 
-			<!-- ** ** CONTACT ** ** -->
-			<section class="contact flex-row-cv">
+			<!-- ** // ** CONTACT ** // ** -->
+			<section class="contact">
 				<div class="wrapper1100 flex-row">
 					<!-- ** CONTACT LEFT ** -->
 					<div class="contact_left">
@@ -353,8 +289,8 @@
 
 		<footer>
 
-			<!-- ** ** MAIN FOOTER ** ** -->
-			<section class="main_footer flex-row-cv">
+			<!-- ** // ** MAIN FOOTER ** // ** -->
+			<section class="main_footer">
 				<div class="wrapper1100 flex-row fx-row-between">
 					<!-- ** MAIN FOOTER LEFT ** -->
 					<div class="main_footer_left">
@@ -380,8 +316,8 @@
 				</div> <!-- wrapper1100 -->
 			</section>
 
-			<!-- ** ** POST FOOTER ** ** -->
-			<section class="post_footer flex-row-cv">
+			<!-- ** // ** POST FOOTER ** // ** -->
+			<section class="post_footer">
 				<div class="wrapper1100 flex-row fx-row-between">
 					<div class="post_footer_message txt_small">Enjoy the low price. We are tracking any intention of piracy.</div>
 					<div class="post_footer_message txt_small">© 2020 NEXGEN is Proudly Powered by <a href="#">Codings</a>.</div>

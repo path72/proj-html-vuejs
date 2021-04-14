@@ -125,10 +125,6 @@ var app = new Vue(
 			]
 		},
 		methods: {
-			getReference(ref) {
-				return `<a href="${ref.href}"><i :class="${ref.iconClass}"></i>${ref.text}</a>`;
-				
-			}
 		},
 		computed: {
 		},
@@ -141,7 +137,7 @@ var app = new Vue(
 		components: {
 			'references': {
 				/**
-				 * 	<references :list-"references" :select="[0,1,2,3]"></references>
+				 * 	<references :list-"references" :select="[...]"></references>
 				 */
 				props: ['list','select'],
 				template: `
@@ -157,23 +153,10 @@ var app = new Vue(
 );
 // Vue.config.devtools = true;
 
-// ###################################################### 
-// # jQuery - DYNAMICS                                  # 
-// ###################################################### 
-
-// $(function() {
-// // ********************* doc ready start ***
-
-
-// // *********************** doc ready end ***
-// });
-
-// ###################################################### 
-// # FUNCTIONS                                          # 
-// ###################################################### 
-
-// on scroll 
-// class: header_nav gets class:fixed
-
-
-
+let headerNav = document.getElementsByClassName('header_nav')[0];
+window.onscroll = (e) => {
+	if (window.scrollY > 0)
+		headerNav.className += " fixed";
+	else
+		headerNav.className = " header_nav";
+}
