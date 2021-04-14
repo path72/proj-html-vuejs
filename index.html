@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- *** [ FONTS - montserrat, poppins ] *** -->
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-		<!-- *** [ FONT AWESOME ] *** -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-		<!-- *** [ MY CSS ] *** -->
-		<link rel="stylesheet" href="css/master.css">
-		<!-- *** [ JQUERY - Google CDN ] *** -->
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-		<!-- *** [ Vue.js ] *** -->
-		<!-- development -->
-		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-		<!-- *** [ AXIOS (after Vue.js) ] *** -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
-		<!-- *** [ MY JS - (jQuery doc ready) ] *** -->
-		<!-- <script type="text/javascript" src="js/main.js"></script> -->
-		<!-- *** *** -->
-		<link rel="shortcut icon" href="#">
-		<title>proj-html-vuejs</title>
-	</head>
-	<body>
 
-		<!-----------------------------------------
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- *** [ FONTS - montserrat, poppins ] *** -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- *** [ FONT AWESOME ] *** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- *** [ MY CSS ] *** -->
+    <link rel="stylesheet" href="css/master.css">
+    <!-- *** [ JQUERY - Google CDN ] *** -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- *** [ Vue.js ] *** -->
+    <!-- development -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- *** [ AXIOS (after Vue.js) ] *** -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <!-- *** [ MY JS - (jQuery doc ready) ] *** -->
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
+    <!-- *** *** -->
+    <link rel="shortcut icon" href="#">
+    <title>proj-html-vuejs</title>
+</head>
+
+<body>
+
+    <!-----------------------------------------
 			
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 							  giorno 1	  giorno 2	  giorno 3*
@@ -110,325 +113,333 @@
 
 		------------------------------------------>
 
-		<div id="app">
+	<div id="app">
 
-			<header>
+		<header>
 
-				<!-- ** ** PRE HEADER ** ** -->
-				<section class="pre_header txt_small">
-					<div class="wrapper1100 flex-row fx-row-between">
-						<ul class="pre_header_left">
-							<li><a href="#"><i class="fas fa-clock"></i><span>Open Hours: Mon - Sat - 9:00 - 18:00</span></a></li>
-						</ul>
-						<ul class="pre_header_right flex-row-cv">
-							<li><a href="#"><i class="fas fa-phone-alt"></i><span>+1 (305) 1234-5678</span></a></li>
-							<li><a href="#"><i class="fas fa-envelope"></i><span>hello@example.com</span></a></li>
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-						</ul>
-					</div>
-				</section>
-
-				<!-- ** ** JUMBO HEADER ** ** -->
-				<section class="jumbo_header">
-					<div class="header_nav fix ed">
-						<div class="header_nav_content wrapper1100 flex-row fx-row-between">
-							<!-- ** LOGO ** -->
-							<div class="logo txt_logo">
-								<a href="#" class="flex-row"><div class="logo_left">NEX</div><div class="logo_right">GEN</div></a>							
-							</div>						
-							<!-- ** NAV ** -->
-							<ul class="nav flex-row-cv txt_nav">
-								<li><a href="#">home</a></li>
-								<li><a href="#">services</a></li>
-								<li><a href="#">skills</a></li>
-								<li><a href="#">partners</a></li>
-								<li><a href="#">blog</a></li>
-								<li><button class="btn_full txt_btn">get in touch</button></li>
-							</ul>
-						</div>
-					</div> <!-- header_nav -->
-					<!-- ** JUMBO PAYOFF ** -->
-					<div class="jumbo_payoff">
-						<div class="payoff txt_payoff">
-							<span class="decor"><span>Logistics</span></span> that goes further.
-						</div>
-						<div class="sub_payoff txt_sub_payoff">
-							For 20 years working with the most innovative in the field of transport.
-						</div>
-						<ul class="btn_row flex-row-cv txt_btn">
-							<li><button class="btn_full">get in touch</button></li>
-							<li><button class="btn_empty white">read more</button></li>
-						</ul>
-					</div>
-				</section>
-
-			</header>
-
-			<main>
-
-				<!-- ** ** SERVICES ** ** -->
-				<section class="services flex-row-cv">
-					<div class="wrapper1100 flex-row fx-row-between">
-						<div class="services_left">
-							<!-- ** SEVICES LEFT ** -->
-							<div class="txt_super_title">our business areas</div>
-							<div class="title txt_title">logistics services</div>
-							<div class="sub_title txt_sub_title">We are leaders in providing logistics services with a set of cutting edge technologies and a team of experienced and renowned professionals.</div>
-							<div class="btn_row flex-row">
-								<button class="btn_small">tradition</button>
-								<button class="btn_small">quality</button>
-								<button class="btn_small">security</button>
-							</div>
-							<button class="btn_full">read more</button>
-						</div>
-						<!-- ** SEVICES RIGHT ** -->
-						<div class="services_right flex-row-co">
-							<div class="card">
-								<img src="img/gallery-3.jpg" alt="">
-								<div class="small_title txt_small_title">Technology</div>
-								<div class="sub_title txt_sub_title">Focused on developing technology solutions adapted to our client's needs.</div>
-							</div>
-							<div class="card">
-								<img src="img/gallery-5.jpg" alt="">
-								<div class="small_title txt_small_title">Transport</div>
-								<div class="sub_title txt_sub_title">We develop operational strategies to improve logistical efficiency.</div>								
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- ** ** COMPANY ** ** -->
-				<section class="company">
-					<div class="company_bg flex-row">
-						<div class="company_bg_left"></div>
-						<div class="company_bg_right"></div>
-					</div>
-					<div class="company_box">
-						<div class="company_content wrapper1100 flex-row-cv">
-							<div class="company_block">
-								<div class="txt_super_title">about the network</div>
-								<div class="title txt_title"><span class="txt_bg_highlight_1">the</span> company</div>
-								<div class="sub_title txt_sub_title">With all of this expertise and capability comes an unrivalled commitment to customer service.</div>
-								<ul>
-									<li class="flex-row">
-										<div class="percentage_box">
-											<div class="pie_chart value1 flex-row-cc">
-												<div><span class="txt_percentage">92</span><span class="txt_percentage2">%</span></div>
-											</div>
-										</div>
-										<div class="info">
-											<div class="small_title txt_small_title">leadership</div>
-											<div class="sub_title txt_sub_title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
-										</div>
-									</li>
-									<li class="flex-row">
-										<div class="percentage_box">
-											<div class="pie_chart value2 flex-row-cc">
-												<div><span class="txt_percentage">100</span><span class="txt_percentage2">%</span></div>
-											</div>
-										</div>
-										<div class="info">
-											<div class="small_title txt_small_title">psychology</div>
-											<div class="sub_title txt_sub_title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
-										</div>
-									</li>
-									<li class="flex-row">
-										<div class="percentage_box">
-											<div class="pie_chart value3 flex-row-cc">
-												<div><span class="txt_percentage">85</span><span class="txt_percentage2">%</span></div>
-											</div>
-										</div>
-										<div class="info">
-											<div class="small_title txt_small_title">flexibility</div>
-											<div class="sub_title txt_sub_title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
-										</div>
-									</li>
-								</ul>
-							</div> <!-- company_block -->
-						</div> <!-- company_content wrapper1100 -->
-					</div> <!-- company_box -->
-				</section>
-
-				<!-- ** ** SPONSORS ** ** -->
-				<section class="sponsors flex-row-cc">
-					<ul class="flex-row-cv">
-						<li><a href="#"><img src="img/logo-5.png" alt=""></a></li>
-						<li><a href="#"><img src="img/logo-1.png" alt=""></a></li>
-						<li><a href="#"><img src="img/logo-2.png" alt=""></a></li>
-						<li><a href="#"><img src="img/logo-3.png" alt=""></a></li>
-						<li><a href="#"><img src="img/logo-4.png" alt=""></a></li>
-						<li><a href="#"><img src="img/logo-5.png" alt=""></a></li>
+			<!-- ** ** PRE HEADER ** ** -->
+			<section class="pre_header txt_small">
+				<div class="wrapper1100 flex-row fx-row-between">
+					<ul class="pre_header_left">
+						<li><a href="#"><i class="fas fa-clock"></i><span>Open Hours: Mon - Sat - 9:00 - 18:00</span></a></li>
 					</ul>
-				</section>
+					<ul class="pre_header_right flex-row-cv">
+						<li><a href="#"><i class="fas fa-phone-alt"></i><span>+1 (305) 1234-5678</span></a></li>
+						<li><a href="#"><i class="fas fa-envelope"></i><span>hello@example.com</span></a></li>
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					</ul>
+				</div>
+			</section>
 
-				<!-- ** ** NEWS ** ** -->
-				<section class="news flex-row-cv">
-					<div class="wrapper1100">
-						<!-- ** NEWS TOP ** -->
-						<div class="news_top flex-row fx-row-between">
-							<div class="news_top_left">
-								<div class="txt_super_title">our editorial content</div>
-								<div class="title txt_title">latest <span class="txt_bg_highlight_1">news</span></div>
-								<div class="sub_title txt_sub_title">Every week we publish content about what is best in the business world.</div>
-							</div>
-							<div class="news_top_right flex-col fx-col-bottom">
-								<button class="btn_full">see all</button>
-							</div>
+			<!-- ** ** JUMBO HEADER ** ** -->
+			<section class="jumbo_header">
+				<div class="header_nav fix ed">
+					<div class="header_nav_content wrapper1100 flex-row fx-row-between">
+						<!-- ** LOGO ** -->
+						<div class="logo txt_logo">
+							<a href="#" class="flex-row"><div class="logo_left">NEX</div><div class="logo_right">GEN</div></a>
 						</div>
-						<!-- ** NEWS BOTTOM ** -->
-						<div class="news_bottom flex-row fx-row-between">
-							<div class="card">
-								<a href="#">
-									<img src="img/news-1.jpg" alt="">
-									<div class="small_title txt_small_title_2">Increasing creativity is possible for everyone</div>
-								</a>
-							</div>
-							<div class="card">
-								<a href="#">
-									<img src="img/news-2.jpg" alt="">
-									<div class="small_title txt_small_title_2">Because market research is part of the business plan</div>
-								</a>
-							</div>
-							<div class="card">
-								<a href="#">
-									<img src="img/news-3.jpg" alt="">
-									<div class="small_title txt_small_title_2">Working from home is now a trend</div>
-								</a>
-							</div>
-						</div> <!-- news_bottom -->
-					</div> <!-- wrapper1100 -->
-				</section>
-
-				<!-- ** ** NEWSLETTER ** ** -->
-				<section class="newsletter flex-row-cc">
-					<div class="nexsletter_left">
-						<div class="txt_super_title">newsletter</div>
-						<div class="title txt_title"><span class="txt_bg_highlight_1">know</span> first</div>
-						<div class="sub_title txt_sub_title">Follow closely and receive content about our company and the news of the current market.</div>
+						<!-- ** NAV ** -->
+						<ul class="nav flex-row-cv txt_nav">
+							<li><a href="#"><span>home</span></a></li>
+							<li><a href="#"><span>services</span></a></li>
+							<li><a href="#"><span>skills</span></a></li>
+							<li><a href="#"><span>partners</span></a></li>
+							<li><a href="#"><span>blog</span></a></li>
+							<li><a href="#" class="btn btn_full txt_btn">get in touch</a></li>
+						</ul>
 					</div>
-					<div class="nexsletter_right">
-						<input type="text" placeholder="Name" class="txt_input">
-						<input type="email" placeholder="Email" class="txt_input">
-						<button class="btn_full">subscribe</button>
-					</div>
-				</section>
+				</div> <!-- header_nav -->
+				<!-- ** JUMBO PAYOFF ** -->
+				<div class="jumbo_payoff">
+					<div class="payoff txt_payoff"><span class="decor"><span>Logistics</span></span> that goes further.</div>
+					<div class="sub_payoff txt_sub_payoff">For 20 years working with the most innovative in the field of transport.</div>
+					<ul class="btn_row flex-row-cv txt_btn">
+						<li><a href="#" class="btn btn_full">get in touch</a></li>
+						<li><a href="#" class="btn btn_empty white">read more</a></li>
+					</ul>
+				</div>
+			</section>
 
-				<!-- ** ** CONTACT ** ** -->
-				<section class="contact flex-row-cv">
-					<div class="wrapper1100 flex-row">
-						<!-- ** CONTACT LEFT ** -->
-						<div class="contact_left">
-							<div class="txt_super_title">send a message</div>
-							<div class="title txt_title">get in <span class="txt_bg_highlight_1">touch</span></div>
-							<div class="sub_title txt_sub_title">We will respond to your message as soon as possible.</div>
-							<!-- INPUT FORM -->
-							<form class="flex-col-cv" action="">
-								<div class="form_row flex-row">
-									<input type="text" placeholder="Name" class="txt_input">
-									<input type="email" placeholder="Email" class="txt_input">	
-								</div>
-								<div class="form_row flex-row">
-									<input type="text" placeholder="Phone" class="txt_input">
-									<select type="email" class="txt_input">
-										<option value="">More info</option>
-										<option value=""></option>
-										<option value=""></option>
-									</select>
-								</div>
-								<textarea type="text" placeholder="Message" class="txt_input"></textarea>
-							</form>
-							<button class="btn_full">send</button>
+		</header>
+
+		<main>
+
+			<!-- ** ** SERVICES ** ** -->
+			<section class="services flex-row-cv">
+				<div class="wrapper1100 flex-row fx-row-between">
+					<!-- ** SEVICES LEFT ** -->
+					<div class="services_left">
+						<div class="txt_super_title">our business areas</div>
+						<div class="title txt_title">logistics services</div>
+						<div class="sub_title txt_sub_title">We are leaders in providing logistics services with a set of cutting edge technologies and a team of experienced and renowned professionals.</div>
+						<ul class="btn_row flex-row">
+							<li><a href="#" class="btn btn_small">tradition</a></li>
+							<li><a href="#" class="btn btn_small">quality</a></li>
+							<li><a href="#" class="btn btn_small">security</a></li>
+						</ul>
+						<ul class="btn_row flex-row-cv txt_btn">
+							<li><a href="#" class="btn btn btn_full">read more</a></li>
+						</ul>						
+					</div>
+					<!-- ** SEVICES RIGHT ** -->
+					<div class="services_right flex-row-co">
+						<div class="card">
+							<img src="img/gallery-3.jpg" alt="">
+							<div class="small_title txt_small_title">Technology</div>
+							<div class="sub_title txt_sub_title">Focused on developing technology solutions adapted to our client's needs.</div>
 						</div>
-						<!-- ** CONTACT RIGHT ** -->
-						<div class="contact_right">
-							<div class="small_title txt_small_title">Example Inc.</div>
-							<div class="sub_title txt_sub_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-							<div class="sub_title txt_sub_title">Praesent diam lacus, dapibus sed imperdiet consectetur.</div>
+						<div class="card">
+							<img src="img/gallery-5.jpg" alt="">
+							<div class="small_title txt_small_title">Transport</div>
+							<div class="sub_title txt_sub_title">We develop operational strategies to improve logistical efficiency.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ** ** COMPANY ** ** -->
+			<section class="company">
+				<div class="company_bg flex-row">
+					<div class="company_bg_left"></div>
+					<div class="company_bg_right"></div>
+				</div>
+				<div class="company_box">
+					<div class="company_content wrapper1100 flex-row-cv">
+						<div class="company_block">
+							<div class="txt_super_title">about the network</div>
+							<div class="title txt_title"><span class="txt_bg_highlight_1">the</span> company</div>
+							<div class="sub_title txt_sub_title">With all of this expertise and capability comes an unrivalled commitment to customer service.</div>
+							<!-- ** PIE CHART LIST ** -->
 							<ul>
-								<li><a href="#"><i class="fas fa-phone-alt"></i><span class="txt_list">+1 (305) 1234-5678</span></a></li>
-								<li><a href="#"><i class="fas fa-envelope"></i><span class="txt_list">hello@example.com</span></a></li>
-								<li><a href="#"><i class="fas fa-map-marker-alt"></i><span class="txt_list">Main Avenue, 987</span></a></li>
+								<li class="flex-row">
+									<div class="percentage_box">
+										<div class="pie_chart value1 flex-row-cc">
+											<div><span class="txt_percentage">92</span><span class="txt_percentage2">%</span></div>
+										</div>
+									</div>
+									<div class="info">
+										<div class="small_title txt_small_title">leadership</div>
+										<div class="sub_title txt_sub_title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
+									</div>
+								</li>
+								<li class="flex-row">
+									<div class="percentage_box">
+										<div class="pie_chart value2 flex-row-cc">
+											<div><span class="txt_percentage">100</span><span class="txt_percentage2">%</span></div>
+										</div>
+									</div>
+									<div class="info">
+										<div class="small_title txt_small_title">psychology</div>
+										<div class="sub_title txt_sub_title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
+									</div>
+								</li>
+								<li class="flex-row">
+									<div class="percentage_box">
+										<div class="pie_chart value3 flex-row-cc">
+											<div><span class="txt_percentage">85</span><span class="txt_percentage2">%</span></div>
+										</div>
+									</div>
+									<div class="info">
+										<div class="small_title txt_small_title">flexibility</div>
+										<div class="sub_title txt_sub_title">Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
+									</div>
+								</li>
 							</ul>
-							<button class="btn_empty green">view map</button>
+						</div> <!-- company_block -->
+					</div> <!-- company_content wrapper1100 -->
+				</div> <!-- company_box -->
+			</section>
+
+			<!-- ** ** SPONSORS ** ** -->
+			<section class="sponsors flex-row-cc">
+				<ul class="flex-row-cv">
+					<li><a href="#"><img src="img/logo-5.png" alt=""></a></li>
+					<li><a href="#"><img src="img/logo-1.png" alt=""></a></li>
+					<li><a href="#"><img src="img/logo-2.png" alt=""></a></li>
+					<li><a href="#"><img src="img/logo-3.png" alt=""></a></li>
+					<li><a href="#"><img src="img/logo-4.png" alt=""></a></li>
+					<li><a href="#"><img src="img/logo-5.png" alt=""></a></li>
+				</ul>
+			</section>
+
+			<!-- ** ** NEWS ** ** -->
+			<section class="news flex-row-cv">
+				<div class="wrapper1100">
+					<!-- ** NEWS TOP ** -->
+					<div class="news_top flex-row fx-row-between">
+						<div class="news_top_left">
+							<div class="txt_super_title">our editorial content</div>
+							<div class="title txt_title">latest <span class="txt_bg_highlight_1">news</span></div>
+							<div class="sub_title txt_sub_title">Every week we publish content about what is best in the business world.</div>
 						</div>
-					</div> <!-- wrapper1100 -->
-				</section>
-
-			</main>
-
-			<footer>
-
-				<!-- ** ** MAIN FOOTER ** ** -->
-				<section class="main_footer flex-row-cv">
-					<div class="wrapper1100 flex-row fx-row-between">
-						<!-- ** MAIN FOOTER LEFT ** -->
-						<div class="main_footer_left">
-							<!-- LOGO -->
-							<div class="logo txt_logo_footer">
-								<a href="#" class="flex-row"><div class="logo_left">NEX</div><div class="logo_right">GEN</div></a>
-							</div>
-							<div class="sub_title txt_sub_title">A Functional HTML Template for Corporate & Business.</div>
-							<ul>
-								<li><a href="#"><i class="fas fa-phone-alt"></i>+1 (305) 1234-5678</a></li>
-								<li><a href="#"><i class="fas fa-envelope"></i>hello@example.com</a></li>
-								<li><a href="#"><i class="fas fa-map-marker-alt"></i>Main Avenue, 987</a></li>
-							</ul>
-							<button class="btn_empty white">get in touch</button>
-						</div>
-						<!-- ** MAIN FOOTER RIGHT ** -->
-						<div class="main_footer_right flex-row-co">
-							<div class="card">
-								<ul>
-									<li class="small_title txt_small_title">About</li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>The Company</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Institutional</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Social & Events</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Innovation</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Environment</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Technology</a></li>
-								</ul>
-							</div>
-							<div class="card">
-								<ul>
-									<li class="small_title txt_small_title">Transport</li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Industrialized</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Chemicals</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Packaged Liquids</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Construction</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Laminated Wood</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>And others</a></li>
-								</ul>
-							</div>
-							<div class="card">
-								<ul>
-									<li class="small_title txt_small_title">Support</li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Responsibility</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Terms of Use</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>About Cookies</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Privacy Policy</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Accessibility</a></li>
-									<li><a href="#"><i class="fas fa-angle-right"></i>Information</a></li>
-								</ul>
-							</div>
-						</div> <!-- main_footer_right -->
-					</div> <!-- wrapper1100 -->
-				</section>
-
-				<!-- ** ** POST FOOTER ** ** -->
-				<section class="post_footer flex-row-cv">
-					<div class="wrapper1100 flex-row fx-row-between">
-						<div class="post_footer_message txt_small">Enjoy the low price. We are tracking any intention of piracy.</div>
-						<div class="post_footer_message txt_small">© 2020 NEXGEN is Proudly Powered by <a href="#">Codings</a>.</div>
+						<ul class="news_top_right flex-col fx-col-bottom">
+							<li><a href="#" class="btn btn_full">see all</a></li>
+						</ul>
 					</div>
-				</section>
+					<!-- ** NEWS BOTTOM ** -->
+					<div class="news_bottom flex-row fx-row-between">
+						<div class="card">
+							<a href="#">
+								<img src="img/news-1.jpg" alt="">
+								<div class="small_title txt_small_title_2">Increasing creativity is possible for everyone</div>
+							</a>
+						</div>
+						<div class="card">
+							<a href="#">
+								<img src="img/news-2.jpg" alt="">
+								<div class="small_title txt_small_title_2">Because market research is part of the business plan</div>
+							</a>
+						</div>
+						<div class="card">
+							<a href="#">
+								<img src="img/news-3.jpg" alt="">
+								<div class="small_title txt_small_title_2">Working from home is now a trend</div>
+							</a>
+						</div>
+					</div> <!-- news_bottom -->
+				</div> <!-- wrapper1100 -->
+			</section>
 
-			</footer>
+			<!-- ** ** NEWSLETTER ** ** -->
+			<section class="newsletter flex-row-cc">
+				<div class="nexsletter_left">
+					<div class="txt_super_title">newsletter</div>
+					<div class="title txt_title"><span class="txt_bg_highlight_1">know</span> first</div>
+					<div class="sub_title txt_sub_title">Follow closely and receive content about our company and the news of the current market.</div>
+				</div>
+				<div class="nexsletter_right">
+					<input type="text" placeholder="Name" class="txt_input">
+					<input type="email" placeholder="Email" class="txt_input">
+					<ul class="flex-row">
+						<li><a href="#" class="btn btn_full">subscribe</a></li>
+					</ul>
+				</div>
+			</section>
 
-		</div> <!-- Vue.js main instance #app -->
+			<!-- ** ** CONTACT ** ** -->
+			<section class="contact flex-row-cv">
+				<div class="wrapper1100 flex-row">
+					<!-- ** CONTACT LEFT ** -->
+					<div class="contact_left">
+						<div class="txt_super_title">send a message</div>
+						<div class="title txt_title">get in <span class="txt_bg_highlight_1">touch</span></div>
+						<div class="sub_title txt_sub_title">We will respond to your message as soon as possible.</div>
+						<!-- INPUT FORM -->
+						<form class="flex-col-cv" action="">
+							<div class="form_row flex-row">
+								<input type="text" placeholder="Name" class="txt_input">
+								<input type="email" placeholder="Email" class="txt_input">
+							</div>
+							<div class="form_row flex-row">
+								<input type="text" placeholder="Phone" class="txt_input">
+								<select type="email" class="txt_input">
+									<option value="">More info</option>
+									<option value="">Option A</option>
+									<option value="">Option B</option>
+								</select>
+							</div>
+							<textarea type="text" placeholder="Message" class="txt_input"></textarea>
+						</form>
+						<ul class="flex-row">
+							<li><a href="#" class="btn btn_full">send</a></li>
+						</ul>
+					</div>
+					<!-- ** CONTACT RIGHT ** -->
+					<div class="contact_right">
+						<div class="small_title txt_small_title">Example Inc.</div>
+						<div class="sub_title txt_sub_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+						<div class="sub_title txt_sub_title">Praesent diam lacus, dapibus sed imperdiet consectetur.</div>
+						<ul class="txt_list">
+							<li><a href="#"><i class="fas fa-phone-alt"></i>+1 (305) 1234-5678</a></li>
+							<li><a href=""><i class="fas fa-envelope"></i>hello@example.com</a></li>
+							<li><a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i>Main Avenue, 987</a></li>
+						</ul>
+						<ul class="flex-row">
+							<li><a href="#" class="btn btn_empty green">view map</a></li>
+						</ul>
+					</div>
+				</div> <!-- wrapper1100 -->
+			</section>
 
-		<!-- ** [ MY JS ] ** -->
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+		</main>
+
+		<footer>
+
+			<!-- ** ** MAIN FOOTER ** ** -->
+			<section class="main_footer flex-row-cv">
+				<div class="wrapper1100 flex-row fx-row-between">
+					<!-- ** MAIN FOOTER LEFT ** -->
+					<div class="main_footer_left">
+						<!-- LOGO -->
+						<div class="logo txt_logo_footer">
+							<a href="#" class="flex-row"><div class="logo_left">NEX</div><div class="logo_right">GEN</div></a>
+						</div>
+						<div class="sub_title txt_sub_title">A Functional HTML Template for Corporate & Business.</div>
+						<ul class="references">
+							<li><a href="#"><i class="fas fa-phone-alt"></i>+1 (305) 1234-5678</a></li>
+							<li><a href=""><i class="fas fa-envelope"></i>hello@example.com</a></li>
+							<li><a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i>Main Avenue, 987</a></li>
+						</ul>
+						<ul class="flex-row">
+							<li><a href="#" class="btn btn_empty white">get in touch</a></li>
+						</ul>
+					</div>
+					<!-- ** MAIN FOOTER RIGHT ** -->
+					<div class="main_footer_right flex-row-co">
+						<div class="card">
+							<ul>
+								<li class="small_title txt_small_title">About</li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>The Company</a></li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>Institutional</a></li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>Social & Events</a></li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>Innovation</a></li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>Environment</a></li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>Technology</a></li>
+							</ul>
+						</div>
+						<div class="card">
+							<ul>
+								<li class="small_title txt_small_title">Transport</li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>Industrialized</a></li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>Chemicals</a></li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>Packaged Liquids</a></li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>Construction</a></li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>Laminated Wood</a></li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>And others</a></li>
+							</ul>
+						</div>
+						<div class="card">
+							<ul>
+								<li class="small_title txt_small_title">Support</li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>Responsibility</a></li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>Terms of Use</a></li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>About Cookies</a></li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>Privacy Policy</a></li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>Accessibility</a></li>
+								<li><a href="#"><i class="fas fa-angle-right"></i>Information</a></li>
+							</ul>
+						</div>
+					</div> <!-- main_footer_right -->
+				</div> <!-- wrapper1100 -->
+			</section>
+
+			<!-- ** ** POST FOOTER ** ** -->
+			<section class="post_footer flex-row-cv">
+				<div class="wrapper1100 flex-row fx-row-between">
+					<div class="post_footer_message txt_small">Enjoy the low price. We are tracking any intention of piracy.</div>
+					<div class="post_footer_message txt_small">© 2020 NEXGEN is Proudly Powered by <a href="#">Codings</a>.</div>
+				</div>
+			</section>
+
+		</footer>
+
+	</div> <!-- Vue.js main instance #app -->
+
+	<!-- ** [ MY JS ] ** -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>
