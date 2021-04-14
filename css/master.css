@@ -72,14 +72,11 @@ header .pre_header a {
 header .pre_header a:hover {
     color: var(--green1);
 }
-header .pre_header [class*="fa-"] {
-    padding: 0 5px;
-}
-header .pre_header span {
-    padding: 0 3px;
-}
 header .pre_header .pre_header_right li:not(:last-child) {
-    padding-right: 27px;
+	margin-right: 27px;
+}
+header .pre_header [class*="fa-"] {
+	padding: 0 5px;
 }
 
 /****************************************************************
@@ -116,6 +113,9 @@ header .jumbo_header .header_nav.fixed {
 header .jumbo_header .header_nav_content {
     height: 46px;
     padding-left: 5px;
+}
+header .jumbo_header .header_nav_content .logo {
+	line-height: 46px; 
 }
 
 /** NAV **/

@@ -7,6 +7,12 @@ var app = new Vue(
 		el: '#app',
 		data: {
 			references: [
+				{
+					text		: 'Open Hours: Mon - Sat - 9:00 - 18:00',
+					iconClass	: 'fas fa-clock',
+					hrefPrefix	: '#',
+					target		: '_blank'
+				},
 				{ 
 					text		: '+1 (305) 1234-5678',
 					iconClass	: 'fas fa-phone-alt',
@@ -23,44 +29,55 @@ var app = new Vue(
 					text		: 'Main Avenue, 987',
 					iconClass	: 'fas fa-map-marker-alt',
 					hrefPrefix	: 'http://maps.google.com/?q=',
-					target		: '_black'
-				} 
+					target		: '_blank'
+				},
+				{
+					text		: '',
+					iconClass	: 'fab fa-facebook-f',
+					hrefPrefix	: '#',
+					target		: '_blank'
+				},
+				{
+					text		: '',
+					iconClass	: 'fab fa-twitter',
+					hrefPrefix	: '#',
+					target		: '_blank'
+				},
+				{
+					text		: '',
+					iconClass	: 'fab fa-linkedin-in',
+					hrefPrefix	: '#',
+					target		: '_blank'
+				}
 			],
-			headerInfoMenu: [],
 			headerNavEntries: [
 				{
 					text: 'home',
-					activeLink: true,
 					href: '#',
 					class: ''
 				},
 				{
 					text: 'services',
-					activeLink: true,
 					href: '#',
 					class: ''
 				},
 				{
 					text: 'skills',
-					activeLink: true,
 					href: '#',
 					class: ''
 				},
 				{
 					text: 'partners',
-					activeLink: true,
 					href: '#',
 					class: ''
 				},
 				{
 					text: 'blog',
-					activeLink: true,
 					href: '#',
 					class: ''
 				},
 				{
 					text: 'get in touch',
-					activeLink: true,
 					href: '#',
 					class: 'btn btn_full txt_btn'
 				},
@@ -120,6 +137,21 @@ var app = new Vue(
 		mounted() {
 		},
 		updated() {
+		},
+		components: {
+			'references': {
+				/**
+				 * 	<references :list-"references" :select="[0,1,2,3]"></references>
+				 */
+				props: ['list','select'],
+				template: `
+				<ul>
+					<li v-for="(ref,index) in list" v-if="select.includes(index)">
+						<a :href="ref.hrefPrefix+ref.text" :target="ref.target"><i :class="ref.iconClass"></i>{{ref.text}}</a>
+					</li>
+				</ul>
+				`
+			}
 		}
 	}
 );

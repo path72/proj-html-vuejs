@@ -120,16 +120,8 @@
 			<!-- ** ** PRE HEADER ** ** -->
 			<section class="pre_header txt_small">
 				<div class="wrapper1100 flex-row fx-row-between">
-					<ul class="pre_header_left">
-						<li><a href="#"><i class="fas fa-clock"></i><span>Open Hours: Mon - Sat - 9:00 - 18:00</span></a></li>
-					</ul>
-					<ul class="pre_header_right flex-row-cv">
-						<li><a href="#"><i class="fas fa-phone-alt"></i><span>+1 (305) 1234-5678</span></a></li>
-						<li><a href="#"><i class="fas fa-envelope"></i><span>hello@example.com</span></a></li>
-						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-					</ul>
+					<references class="pre_header_left" :list="references" :select="[0]"></references>
+					<references class="pre_header_right flex-row-cv" :list="references" :select="[1,2,4,5,6]"></references>
 				</div>
 			</section>
 
@@ -349,11 +341,7 @@
 						<div class="small_title txt_small_title">Example Inc.</div>
 						<div class="sub_title txt_sub_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 						<div class="sub_title txt_sub_title">Praesent diam lacus, dapibus sed imperdiet consectetur.</div>
-						<ul class="references txt_list">
-							<li v-for="ref in references">
-								<a :href="ref.hrefPrefix+ref.text" :target="ref.target"><i :class="ref.iconClass"></i>{{ref.text}}</a>
-							</li>
-						</ul>
+						<references class="references txt_list" :list="references" :select="[1,2,3]"></references>
 						<ul class="flex-row">
 							<li><a href="#" class="btn btn_empty green">view map</a></li>
 						</ul>
@@ -375,11 +363,7 @@
 							<a href="#" class="flex-row"><div class="logo_left">NEX</div><div class="logo_right">GEN</div></a>
 						</div>
 						<div class="sub_title txt_sub_title">A Functional HTML Template for Corporate & Business.</div>
-						<ul class="references">
-							<li v-for="ref in references">
-								<a :href="ref.hrefPrefix+ref.text" :target="ref.target"><i :class="ref.iconClass"></i>{{ref.text}}</a>
-							</li>
-						</ul>
+						<references class="references" :list="references" :select="[1,2,3]"></references>
 						<ul class="flex-row">
 							<li><a href="#" class="btn btn_empty white">get in touch</a></li>
 						</ul>
