@@ -8,42 +8,49 @@ var app = new Vue(
 		data: {
 			references: [
 				{
+					name		: 'opening',
 					text		: 'Open Hours: Mon - Sat - 9:00 - 18:00',
 					iconClass	: 'fas fa-clock',
 					hrefPrefix	: '#',
 					target		: '_blank'
 				},
 				{ 
+					name		: 'phone',
 					text		: '+1 (305) 1234-5678',
 					iconClass	: 'fas fa-phone-alt',
 					hrefPrefix	: 'tel:',
 					target		: '_self'
 				},
 				{ 
+					name		: 'email',
 					text		: 'hello@example.com',
 					iconClass	: 'fas fa-envelope',
 					hrefPrefix	: 'mailto:',
 					target		: '_self'
 				},
 				{
+					name		: 'address',
 					text		: 'Main Avenue, 987',
 					iconClass	: 'fas fa-map-marker-alt',
 					hrefPrefix	: 'http://maps.google.com/?q=',
 					target		: '_blank'
 				},
 				{
+					name		: 'fb',
 					text		: '',
 					iconClass	: 'fab fa-facebook-f',
 					hrefPrefix	: '#',
 					target		: '_blank'
 				},
 				{
+					name		: 'tw',
 					text		: '',
 					iconClass	: 'fab fa-twitter',
 					hrefPrefix	: '#',
 					target		: '_blank'
 				},
 				{
+					name		: 'li',
 					text		: '',
 					iconClass	: 'fab fa-linkedin-in',
 					hrefPrefix	: '#',
@@ -137,12 +144,12 @@ var app = new Vue(
 		components: {
 			'references': {
 				/**
-				 * 	<references :list-"references" :select="[...]"></references>
+				 * 	<references :list="references" :select="[name1,name2,...]"></references>
 				 */
 				props: ['list','select'],
 				template: `
 				<ul>
-					<li v-for="(ref,index) in list" v-if="select.includes(index)">
+					<li v-for="(ref,index) in list" v-if="select.includes(ref.name)">
 						<a :href="ref.hrefPrefix+ref.text" :target="ref.target"><i :class="ref.iconClass"></i>{{ref.text}}</a>
 					</li>
 				</ul>
