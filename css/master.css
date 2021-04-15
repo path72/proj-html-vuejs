@@ -25,6 +25,9 @@
     --black         : #000000;
     --black_075     : #00000013;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--saltpan);
@@ -123,15 +126,6 @@ header .jumbo_header .header_nav::after {
 header .jumbo_header .header_nav.fixed::after {
 	opacity: 1;
 }
-
-
-
-
-
-
-
-
-
 header .jumbo_header .header_nav_content {
     height: 46px;
     padding-left: 5px;
@@ -202,34 +196,34 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 /****************************************************************
 **  SERVICES
 */
-.services {
+#services {
     position: relative;
     padding: 147px 0;
 }
 
 /** SEVICES LEFT **/
-.services .services_left {
+#services .services_left {
     width: 30%;
     margin-right: 30px;
 }
-.services .services_left .txt_title {
+#services .services_left .txt_title {
     color: var(--petrol);
 }
-.services .services_left .txt_sub_title {
+#services .services_left .txt_sub_title {
     color: var(--grey2);
 }
-.services .services_left .btn_row {
+#services .services_left .btn_row {
     margin-top: 24px;
 }
-.services .services_left .btn_row .btn {
+#services .services_left .btn_row .btn {
     margin-right: 15px;
 }
 
 /** SEVICES RIGHT **/
-.services .services_right {
+#services .services_right {
     width: 65%;
 }
-.services .services_right .card {
+#services .services_right .card {
     width: 100%;
     height: 100%;
     padding: 45px 60px;
@@ -237,26 +231,26 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
     background-color: var(--realwhite);
 	transition: all .6s ease;
 }
-.services .services_right .card:hover {
+#services .services_right .card:hover {
 	transform: translateY(-10px);
 }
-.services .services_right .card:not(:last-child) {
+#services .services_right .card:not(:last-child) {
     margin-right: 30px;
 }
-.services .services_right .card img {
+#services .services_right .card img {
     width: 100%;
     margin-bottom: 12px;
 }
-.services .services_right .card .small_title {
+#services .services_right .card .small_title {
     color: var(--petrol);
     margin-bottom: 18px;
 }
-.services .services_right .card .sub_title {
+#services .services_right .card .sub_title {
     color: var(--grey2);
 }
 
 /** DOTS 1 **/
-.services::after {
+#services::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -271,70 +265,70 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 }
 
 /****************************************************************
-**  COMPANY
+**  SKILLS
 */
-.company {
+#skills {
     position: relative;
     width: 100%;
     height: 1030px;
 }
-.company .company_bg {
+#skills .company_bg {
     height: 100%;
 }
-.company .company_bg_left {
+#skills .company_bg_left {
     width: 50%;
     background-color: var(--night);
 }
-.company .company_bg_right {
+#skills .company_bg_right {
     width: 50%;
     background-image: url(../img/about-5.jpg);
     background-position: center 0;
     background-size: cover;
 }
-.company .company_box {
+#skills .company_box {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-.company .company_box .company_content {
+#skills .company_box .company_content {
     height: 100%;
 }
-.company .company_box .company_content .company_block {
+#skills .company_box .company_content .company_block {
     width: 50%;
     padding-right: 50px;
 }
-.company .company_box .company_content .company_block .title {
+#skills .company_box .company_content .company_block .title {
     color: var(--realwhite);
 }
-.company .company_box .company_content .company_block .small_title {
+#skills .company_box .company_content .company_block .small_title {
     color: var(--white);
     margin-bottom: 17px;
 }
-.company .company_box .company_content .company_block .sub_title {
+#skills .company_box .company_content .company_block .sub_title {
     color: var(--grey1);
 }
-.company .company_box .company_content .company_block li:not(:last-child) {
+#skills .company_box .company_content .company_block li:not(:last-child) {
     margin: 82px 0;
 }
-.company .company_box .company_content .company_block li .info {
+#skills .company_box .company_content .company_block li .info {
     margin-left: 35px;
 }
 
 /** PIE CHART LIST **/
-.company .company_box .company_content .company_block li .pie_chart {
+#skills .company_box .company_content .company_block li .pie_chart {
 	transition: all .6s ease;
 }
-.company .company_box .company_content .company_block li:hover .pie_chart {
+#skills .company_box .company_content .company_block li:hover .pie_chart {
 	transform: scale(1.1);
 }
-.company .company_box .company_content .company_block .pie_chart span { /* percentage */
+#skills .company_box .company_content .company_block .pie_chart span { /* percentage */
     color: var(--grey1);
     position: relative;
     z-index: 2;
 }
-.company .company_box .company_content .company_block .pie_chart { /* outer circle */
+#skills .company_box .company_content .company_block .pie_chart { /* outer circle */
     position: relative;
     width: 110px;
     height: 110px;
@@ -343,7 +337,7 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
     background: var(--green1);
     background-image: linear-gradient(to bottom, transparent 50%, var(--lighter_night) 0);
 }
-.company .company_box .company_content .company_block .pie_chart:after { /* inner circle */
+#skills .company_box .company_content .company_block .pie_chart:after { /* inner circle */
     content: "";
     position: absolute;
     top: 50%;
@@ -355,7 +349,7 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
     border-radius: 50%;
     background-color: var(--night);
 }
-.company .company_box .company_content .company_block .pie_chart::before { /* rotating element */
+#skills .company_box .company_content .company_block .pie_chart::before { /* rotating element */
     content: "";
     display: block;
     position: absolute;
@@ -366,18 +360,18 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
     background-color: inherit; /* background-color: solo il background, non il gradiente */ 
     transform-origin: 50% 0;   /* qui sta il trucco! */
 }
-.company .company_box .company_content .company_block .pie_chart.value1::before {
+#skills .company_box .company_content .company_block .pie_chart.value1::before {
     transform: rotate(-.08turn); /* 92=100-8 */
 }
-.company .company_box .company_content .company_block .pie_chart.value2::before {
+#skills .company_box .company_content .company_block .pie_chart.value2::before {
     transform: rotate(-.00turn); /* 100=100-0 */
 }
-.company .company_box .company_content .company_block .pie_chart.value3::before {
+#skills .company_box .company_content .company_block .pie_chart.value3::before {
     transform: rotate(-.15turn); /* 85=100-15 */
 }
 
 /** DOTS 2 **/
-.company::after {
+#skills::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -392,48 +386,48 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 }
 
 /****************************************************************
-**  SPONSORS
+**  PARTNERS
 */
-.sponsors {
+#partners {
 	padding: 78px 0;
 }
-.sponsors img {
+#partners img {
     height: 25px;
     opacity: 0.5;
     margin: 50px;
 }
 
 /****************************************************************
-**  NEWS
+**  BLOG
 */
-.news {
+#blog {
 	padding: 131px 0;
     background-color: var(--realwhite);
 }
 
 /** NEWS TOP **/
-.news .news_top {
+#blog .blog_top {
     margin-bottom: 50px;
 }
-.news .news_top .news_top_left .title {
+#blog .blog_top .blog_top_left .title {
     color: var(--petrol);
 }
-.news .news_top .news_top_left .title span {
+#blog .blog_top .blog_top_left .title span {
     color: var(--green2);
 }
-.news .news_top .news_top_left .sub_title {
+#blog .blog_top .blog_top_left .sub_title {
     color: var(--grey2);
 }
 
 /** NEWS BOTTOM **/
-.news .news_bottom .card {
+#blog .blog_bottom .card {
     position: relative;
     width: 360px;
     height: 360px;
     border-radius: 15px;
     overflow: hidden;
 }
-.news .news_bottom .card::after {
+#blog .blog_bottom .card::after {
     content: "";
     position: absolute;
     top: 0;
@@ -444,13 +438,13 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
 	opacity: .5;
 	transition: opacity .3s ease;
 }
-.news .news_bottom .card:hover::after {
+#blog .blog_bottom .card:hover::after {
     opacity: .7;
 }
-.news .news_bottom .card img {
+#blog .blog_bottom .card img {
     width: 100%;
 }
-.news .news_bottom .card .small_title {
+#blog .blog_bottom .card .small_title {
     position: absolute;
     bottom: 50px;
     left: 50%;
@@ -462,14 +456,14 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
     padding: 0 30px;
 	transition: bottom .3s ease;
 }
-.news .news_bottom .card:hover .small_title {
+#blog .blog_bottom .card:hover .small_title {
 	bottom: 80px;
 }
 
 /****************************************************************
 **  NEWSLETTER
 */
-.newsletter {
+#newsletter {
 	padding: 135px 0;
     background-image: url(../img/bg-1.jpg);
     background-position: center 0;
@@ -477,79 +471,79 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.newsletter .nexsletter_left {
+#newsletter .newsletter_left {
     width: 450px;
     margin-right: 45px;
 }
-.newsletter .nexsletter_left .title {
+#newsletter .newsletter_left .title {
     color: var(--white);
 }
-.newsletter .nexsletter_left .sub_title {
+#newsletter .newsletter_left .sub_title {
     color: var(--grey1);
 }
-.newsletter .nexsletter_right {
+#newsletter .newsletter_right {
     width: 435px;
 }
-.newsletter .nexsletter_right input {
+#newsletter .newsletter_right input {
     width: 100%;
     background-color: var(--realwhite_50);
     margin-bottom: 20px;
 }
-.newsletter .nexsletter_right input:focus {
+#newsletter .newsletter_right input:focus {
     background-color: var(--realwhite_85);
 }
 
 /****************************************************************
 **  CONTACT
 */
-.contact {
+#contact {
 	padding: 125px 0;
 }
 
 /** CONTACT LEFT **/
-.contact .contact_left {
+#contact .contact_left {
     width: 65%;
     margin-right: 40px;
 }
-.contact .contact_left .title {
+#contact .contact_left .title {
     color: var(--petrol);
 }
-.contact .contact_left .title span {
+#contact .contact_left .title span {
     color: var(--green2);
 }
-.contact .contact_left .sub_title {
+#contact .contact_left .sub_title {
     color: var(--grey2);
 }
-.contact .contact_left form {
+#contact .contact_left form {
     margin: 60px 0 15px 0;
 }
-.contact .contact_left form input,
-.contact .contact_left form select,
-.contact .contact_left textarea {
+#contact .contact_left form input,
+#contact .contact_left form select,
+#contact .contact_left textarea {
     min-width: 350px;
     background-color: var(--black_075);
     margin: 0 15px 15px 0;
 }
-.contact .contact_left textarea {
+#contact .contact_left textarea {
     height: 150px;
 }
 
 /** CONTACT RIGHT **/
-.contact .contact_right {
+#contact .contact_right {
     width: 35%;
 }
-.contact .contact_right .small_title {
+#contact .contact_right .small_title {
     color: var(--petrol);
     margin-bottom: 20px;
 }
-.contact .contact_right .sub_title {
+#contact .contact_right .sub_title {
     color: var(--grey2);
     margin-bottom: 30px;
 }
-.contact .contact_right ul.references li a {
+#contact .contact_right ul.references li a {
     color: var(--green2);
 }
-.contact .contact_right ul.references li .fas {
+#contact .contact_right ul.references li .fas {
     width: 45px;
     height: 45px;
     text-align: center;
@@ -560,7 +554,7 @@ header .jumbo_header .jumbo_payoff .btn_row li + li {
     margin: 0 15px 20px 0;
 	transition: all .3s ease;
 }
-.contact .contact_right ul.references li:hover .fas {
+#contact .contact_right ul.references li:hover .fas {
 	transform: scale(1.2);
 }
 
@@ -832,10 +826,21 @@ textarea:focus {
 }
 
 /****************************************************************
+**  MEDIA QUERIES
+*/
+
+/* width <= 1200 */
+@media screen and (max-width: 1200px) {
+
+	/* ! FAI ALTRE COSE ! */
+
+}
+
+/****************************************************************
 **  UTILITY
 */
 /* wrappes */
-.wrapper1100 {
+.wrapper1150 {
     width: 1150px;
     margin: 0 auto;
 }
@@ -870,3 +875,6 @@ textarea:focus {
 	display: table;
 	clear: both;
 }
+
+/****************************************************************
+*/

@@ -24,9 +24,8 @@
 
 <body>
 
-    <!-------------------------------------------------------------------------------------
-			
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    <!---------------------------------------------------------------
+
 							  giorno 1	  giorno 2	  giorno 3*
 							   12/04	   13/04	   14/04
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -37,17 +36,12 @@
 		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 													*no mattina
 		Deadline
-		Giovedì 15 ore 18.00
+			Giovedì 15 ore 18.00
 
-		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		
-		Presentazione dei progetti
-		I lavori saranno presentati Venerdì 16 
-		personalmente con l’insegnante 1to1, 
-		sarà indispensabile quindi prenotare uno slot per poter parlare con un insegnante.
-		Non si tratterà del classico Feedback, ma dovrete presentare il vostro progetto.
+		Chiusura
+			Giovedì 15 ore 14.30
 
-	-------------------------------------------------------------------------------------->
+	---------------------------------------------------------------->		
 
 	<div id="app">
 
@@ -55,7 +49,7 @@
 
 			<!-- ** // ** PRE HEADER ** // ** -->
 			<section class="pre_header txt_small">
-				<div class="wrapper1100 flex-row fx-row-between">
+				<div class="wrapper1150 flex-row fx-row-between">
 					<references class="pre_header_left" :list="references" :select="['opening']"></references>
 					<references class="pre_header_right flex-row-cv" :list="references" :select="['phone','email','fb','tw','li']"></references>
 				</div>
@@ -64,7 +58,7 @@
 			<!-- ** // ** JUMBO HEADER ** // ** -->
 			<section class="jumbo_header">
 				<div class="header_nav">
-					<div class="header_nav_content wrapper1100 flex-row fx-row-between">
+					<div class="header_nav_content wrapper1150 flex-row fx-row-between">
 						<!-- ** LOGO ** -->
 						<div class="logo txt_logo">
 							<a href="#" class="flex-row"><div class="logo_left">NEX</div><div class="logo_right">GEN</div></a>
@@ -82,7 +76,7 @@
 					<div class="payoff txt_payoff"><span class="decor"><span>Logistics</span></span> that goes further.</div>
 					<div class="sub_payoff txt_sub_payoff">For 20 years working with the most innovative in the field of transport.</div>
 					<ul class="btn_row flex-row-cv txt_btn">
-						<li><a href="#" class="btn btn_full">get in touch</a></li>
+						<li><a href="#contact" class="btn btn_full">get in touch</a></li>
 						<li><a href="#" class="btn btn_empty white">read more</a></li>
 					</ul>
 				</div>
@@ -93,8 +87,8 @@
 		<main>
 
 			<!-- ** // ** SERVICES ** // ** -->
-			<section class="services">
-				<div class="wrapper1100 flex-row fx-row-between">
+			<section id="services">
+				<div class="wrapper1150 flex-row fx-row-between">
 					<!-- ** SEVICES LEFT ** -->
 					<div class="services_left">
 						<div class="txt_super_title">our business areas</div>
@@ -125,14 +119,14 @@
 				</div>
 			</section>
 
-			<!-- ** // ** COMPANY ** // ** -->
-			<section class="company">
+			<!-- ** // ** SKILLS ** // ** -->
+			<section id="skills">
 				<div class="company_bg flex-row">
 					<div class="company_bg_left"></div>
 					<div class="company_bg_right"></div>
 				</div>
 				<div class="company_box">
-					<div class="company_content wrapper1100 flex-row-cv">
+					<div class="company_content wrapper1150 flex-row-cv">
 						<div class="company_block">
 							<div class="txt_super_title">about the network</div>
 							<div class="title txt_title"><span class="txt_bg_highlight_1">the</span> company</div>
@@ -174,12 +168,12 @@
 								</li>
 							</ul> <!-- pie chart list -->
 						</div> <!-- company_block -->
-					</div> <!-- company_content wrapper1100 -->
+					</div> <!-- company_content wrapper1150 -->
 				</div> <!-- company_box -->
 			</section>
 
-			<!-- ** // ** SPONSORS ** // ** -->
-			<section class="sponsors flex-row-co">
+			<!-- ** // ** PARTNERS ** // ** -->
+			<section id="partners" class="flex-row-co">
 				<ul class="flex-row-cv">
 					<li><a href="#"><img src="img/logo-5.png" alt=""></a></li>
 					<li><a href="#"><img src="img/logo-1.png" alt=""></a></li>
@@ -190,22 +184,22 @@
 				</ul>
 			</section>
 
-			<!-- ** // ** NEWS ** // ** -->
-			<section class="news">
-				<div class="wrapper1100">
+			<!-- ** // ** BLOG ** // ** -->
+			<section id="blog">
+				<div class="wrapper1150">
 					<!-- ** NEWS TOP ** -->
-					<div class="news_top flex-row fx-row-between">
-						<div class="news_top_left">
+					<div class="blog_top flex-row fx-row-between">
+						<div class="blog_top_left">
 							<div class="txt_super_title">our editorial content</div>
 							<div class="title txt_title">latest <span class="txt_bg_highlight_1">news</span></div>
 							<div class="sub_title txt_sub_title">Every week we publish content about what is best in the business world.</div>
 						</div>
-						<ul class="news_top_right flex-col fx-col-bottom">
+						<ul class="blog_top_right flex-col fx-col-bottom">
 							<li><a href="#" class="btn btn_full">see all</a></li>
 						</ul>
 					</div>
 					<!-- ** NEWS BOTTOM ** -->
-					<div class="news_bottom flex-row fx-row-between">
+					<div class="blog_bottom flex-row fx-row-between">
 						<div class="card">
 							<a href="#">
 								<img src="img/news-1.jpg" alt="">
@@ -224,18 +218,18 @@
 								<div class="small_title txt_small_title_2">Working from home is now a trend</div>
 							</a>
 						</div>
-					</div> <!-- news_bottom -->
-				</div> <!-- wrapper1100 -->
+					</div> <!-- blog_bottom -->
+				</div> <!-- wrapper1150 -->
 			</section>
 
 			<!-- ** // ** NEWSLETTER ** // ** -->
-			<section class="newsletter flex-row-co">
-				<div class="nexsletter_left">
+			<section id="newsletter" class="flex-row-co">
+				<div class="newsletter_left">
 					<div class="txt_super_title">newsletter</div>
 					<div class="title txt_title"><span class="txt_bg_highlight_1">know</span> first</div>
 					<div class="sub_title txt_sub_title">Follow closely and receive content about our company and the news of the current market.</div>
 				</div>
-				<div class="nexsletter_right">
+				<div class="newsletter_right">
 					<input type="text" placeholder="Name" class="txt_input">
 					<input type="email" placeholder="Email" class="txt_input">
 					<ul class="flex-row">
@@ -245,8 +239,8 @@
 			</section>
 
 			<!-- ** // ** CONTACT ** // ** -->
-			<section class="contact">
-				<div class="wrapper1100 flex-row">
+			<section id="contact">
+				<div class="wrapper1150 flex-row">
 					<!-- ** CONTACT LEFT ** -->
 					<div class="contact_left">
 						<div class="txt_super_title">send a message</div>
@@ -279,10 +273,10 @@
 						<div class="sub_title txt_sub_title">Praesent diam lacus, dapibus sed imperdiet consectetur.</div>
 						<references class="references txt_list" :list="references" :select="['phone','email','address']"></references>
 						<ul class="flex-row">
-							<li><a href="#" class="btn btn_empty green">view map</a></li>
+							<li><a class="btn btn_empty green" :href="getReferenceByName('address').href" target="_blank">view map</a></li>
 						</ul>
 					</div>
-				</div> <!-- wrapper1100 -->
+				</div> <!-- wrapper1150 -->
 			</section>
 
 		</main>
@@ -291,7 +285,7 @@
 
 			<!-- ** // ** MAIN FOOTER ** // ** -->
 			<section class="main_footer">
-				<div class="wrapper1100 flex-row fx-row-between">
+				<div class="wrapper1150 flex-row fx-row-between">
 					<!-- ** MAIN FOOTER LEFT ** -->
 					<div class="main_footer_left">
 						<!-- LOGO -->
@@ -301,7 +295,7 @@
 						<div class="sub_title txt_sub_title">A Functional HTML Template for Corporate & Business.</div>
 						<references class="references" :list="references" :select="['phone','email','address']"></references>
 						<ul class="flex-row">
-							<li><a href="#" class="btn btn_empty white">get in touch</a></li>
+							<li><a href="#contact" class="btn btn_empty white">get in touch</a></li>
 						</ul>
 					</div>
 					<!-- ** MAIN FOOTER RIGHT ** -->
@@ -313,12 +307,12 @@
 							</ul>
 						</div>
 					</div>
-				</div> <!-- wrapper1100 -->
+				</div> <!-- wrapper1150 -->
 			</section>
 
 			<!-- ** // ** POST FOOTER ** // ** -->
 			<section class="post_footer">
-				<div class="wrapper1100 flex-row fx-row-between">
+				<div class="wrapper1150 flex-row fx-row-between">
 					<div class="post_footer_message txt_small">Enjoy the low price. We are tracking any intention of piracy.</div>
 					<div class="post_footer_message txt_small">© 2020 NEXGEN is Proudly Powered by <a href="#">Codings</a>.</div>
 				</div>
