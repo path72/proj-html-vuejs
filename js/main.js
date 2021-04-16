@@ -141,6 +141,13 @@ var app = new Vue(
 		created() {
 		},
 		mounted() {
+			let headerNav = document.getElementsByClassName('header_nav')[0];
+			window.onscroll = (e) => {
+				if (window.scrollY > 50)
+					headerNav.className += " fixed";
+				else
+					headerNav.className = "header_nav";
+			}
 		},
 		updated() {
 		},
@@ -163,10 +170,3 @@ var app = new Vue(
 );
 // Vue.config.devtools = true;
 
-let headerNav = document.getElementsByClassName('header_nav')[0];
-window.onscroll = (e) => {
-	if (window.scrollY > 50)
-		headerNav.className += " fixed";
-	else
-		headerNav.className = " header_nav";
-}
